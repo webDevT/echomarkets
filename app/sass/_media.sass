@@ -2,19 +2,1059 @@
 
 /*==========  Desktop First  ==========*/
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
 
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1650px)
+	/**/
+	.main-screen
+		background-size: 1070px
+		background-position: right -75px top 
+		.container-fluid 
+			//width: 1356px
+	.whyecho-two-section
+		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -30vw center / cover
+
+@media only screen and (max-width : 1440px)
+	.image-text,
+	.whyecho-main-screen
+		background-size: 1440px
+	.whyecho-two-section
+		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -35vw center / cover
+	
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+	/**/
+	.main-screen
+		background-size: 1070px
+		background-position: right -95px top 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1550px)
+	/**/
+	.main-screen
+		background-size: 1070px
+		background-position: right -120px top 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1450px)
+	/**/
+	.main-screen
+		background-size: 1070px
+		background-position: right -170px top 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1370px)
+	/**/
+	.main-screen
+		background-size: 1070px
+		background-position: right -200px top
+	.menu__item
+		padding-left: 25px 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	/**/
+	.menu__item
+		padding-left: 15px
+	.menu__item:first-child 
+		padding-left: 30px
+	.header__right-link
+		margin-left: 15px
+	.header__button
+		margin-left: 10px
+	.header__button
+		white-space: nowrap
+	.logo
+		width: 120px
+	.trade
+		padding-bottom: 12vw 
+		background-size: 1440px
+	.main-screen
+		background-size: 1070px
+		background-position: right -250px top 
+	
+@media only screen and (max-width : 1200px)	
+	.menu__link
+		font-size: 13px
+	.header__right-link
+		font-size: 13px
+	.header__button
+		font-size: 13px
+	.header__right
+		width: calc(100% - 120px)
+
+	.main-screen__title
+		font-size: 55px
+
+	.main-screen__input
+		width: 230px
+
+	.menu-row
+		transition: all 0.3s
+
+	.menu-btn.active
+		.menu-row:last-child
+			display: none 
+		.menu-row:first-child 
+			transform: rotate(45deg)
+			margin-bottom: 0
+			position: relative
+			top: 1.5px
+		.menu-row:nth-child(2) 
+			transform: rotate(-45deg)
+	.tab-next
+		right: 10px
+		img
+			width: 30px
+	.tab-prev 
+		left: 10px
+		img 
+			width: 30px
+	.what-trade__content
+		padding-left: 0
+	.tools-prev
+		transform: translateY(-50%) translateX(0%)
+		//display: none
+	.tools-next
+		transform: translateY(-50%) translateX(0%)
+		//display: none
+	.main-screen__form-wrapper,
+	.main-screen__text-wrapper
+		margin-left: 8vw
+	.anim
+		transition: all 1s
+		opacity: 1
+		transform: translateY(0%)
+	.trade
+		padding-top: 4vw
+	.logos-section__title
+		width: 150px
+	.logos-wrapper
+		width: calc( 100% - 150px )
+	.logos-section__title
+		br 
+			display: none
+	.form-circles
+		max-width: 50vw
+	.logos-section__title
+		font-size: 22px
+	.main-screen
+		background-size: 1070px
+		background-position: right -320px top 
+	
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1150px)
+	/**/
+	.header__right
+		width: calc(100% - 100px)
+	.logo
+		width: 100px
+	.menu__link
+		font-size: 12px
+	
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.header__right
+		display: none
+	.menu-row 
+		width: 30px 
+		height: 3px 
+		background: $green
+		display: block
+		margin-bottom: 4px
+	.menu-row:last-child 
+		margin-bottom: 0
+	.menu-btn
+		cursor: pointer
+	.main-screen__text-wrapper
+		padding-top: 0
+	.main-screen__title
+		margin-bottom: 10px
+	.slider-arrows
+		right: 13vw
+	.menu-btn.active
+		.menu-row:last-child
+			display: none 
+		.menu-row:first-child 
+			transform: rotate(45deg)
+			margin-bottom: 0
+			position: relative
+			top: 1.5px
+		.menu-row:nth-child(2) 
+			transform: rotate(-45deg)
+	.header__right 
+		position: absolute 
+		top: 100% 
+		left: 0 
+		width: 100% 
+		background: $blue
+		padding-bottom: 30px
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2)
+		
+	.menu
+		ul 
+			flex-direction: column
+			align-items: flex-start
+			padding-left: 2.53vw 
+			padding-right: 2.53vw
+			padding-top: 30px
+			
+	.menu__item:first-child
+		padding-left: 0
+	.menu__item
+		padding-left: 0
+		margin-bottom: 20px
+	.header-right-wrapper
+		flex-direction: column
+		align-items: flex-start
+		padding-left: 2.53vw 
+		padding-right: 2.53vw
+
+	.header__right-menu
+		display: flex
+		flex-direction: column
+	.header__right-link
+		margin-left: 0
+		margin-bottom: 20px
+	.header__button
+		margin-left: 0
+		font-size: 18px
+	.menu__link,
+	.header__right-link
+		font-size: 18px
+	.header.sticky
+		.menu-row 
+			background: $green
+		.menu__link
+			color: #fff
+		.header__right-link
+			color: $blue
+	.main-screen
+		padding-bottom: 0
+		background-position: top 0 right -380px 
+		//background-size: 125vw
+	.menu__link 
+		color: #fff
+	.header.active-mob 
+		background: $blue
+		.logo-blue 
+			display: none
+		.logo-white 
+			display: block
+	.header-right-wrapper
+		display: none
+	.mega-menu 
+		display: block
+		position: static
+	.mega-menu__title
+		display: none
+	.header.dropdown
+		height: auto
+	.header
+		height: auto
+	.mega-menu.active 
+		height: auto
+	.menu__link
+		text-transform: none
+	.mega-menu 
+		display: none
+		position: static
+		padding-top: 0 
+		padding-left: 2.533vw
+	.mega-menu.active 
+		display: none
+	.menu__link
+		font-size: 2.7vw
+		margin-bottom: 4.5vw
+		display: block 
+		width: 100%
+	.mega-menu__link
+		font-size: 2.7vw
+		font-weight: 200
+	.menu ul
+		padding-top: 5vw
+	.mega-menu__link
+		margin-bottom: 4.5vw
+	.header .menu__item--sub
+		color: #fff
+		.menu__link 
+			color: #fff 
+			font-weight: 700
+		.menu__link:hover 
+			color: #fff
+	.menu__item--sub.active
+		.menu__link 
+			color: $green
+		.menu__link:hover 
+			color: $green
+	.menu-arrow
+		display: block
+		transition: all 0.5s
+	.menu__item--sub
+		width: 100%
+	.menu__link
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+		width: 100%
+	.menu__item--sub.active 
+		.menu__link
+			.menu-arrow
+				transform: rotate(90deg)
+	.tab
+		min-width: 80px
+	.tab-prev,
+	.tab-next 
+		z-index: 999
+	.tab-prev
+		left: 25px 
+	.tab-next
+		right: 25px 
+	.image-text,
+	.what-trade
+		overflow: hidden
+	.man
+		max-width: 100vw
+		width: 90vw
+		left: -30vw
+		top: 0%
+	.trade
+		padding-bottom: 15vw 
+	.partner 
+		.image-text__content
+			padding-left: 0
+	.logos-section
+		.container-fluid 
+			flex-direction: column
+	.logos-section__title
+		width: 100%
+		text-align: center
+		margin-bottom: 30px
+	.logos-wrapper
+		width: 100%
+		flex-wrap: wrap
+		justify-content: center
+		
+	.logo-item
+		margin-left: 0
+		margin: 0 2vw
+		margin-bottom: 3.333vw
+	.footer__content
+		.row-rev 
+			flex-direction: column-reverse
+		.col-lg-3 
+			text-align: center
+	.footer-copy-menu
+		margin-left: auto 
+		margin-right: auto
+		justify-content: center
+	.guy-img
+		max-width: 50vw
+		bottom: 10vw
+	.whyecho-main-screen__item
+		margin-left: 0
+	.whyecho-two-section
+		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -50vw center / cover
+	.ready-to-go__item
+		margin-bottom: 40px
+	.tab-slider .slick-center .tab-slider__item-content
+		transform: scale(1)
+	.main-screen__form-wrapper,
+	.main-screen__text-wrapper
+		margin-left: 0
+	.main-screen__input
+		width: 140px
+	.main-screen__form-text
+		margin-left: 5px
+	.menu__item--sub .menu__link:after
+		display: none
+	.header.active-mob.hide.sticky,
+	.header.active-mob.hide
+		transform: translateY(0)
+	.header.active-mob
+		.header__right
+			height: 100vh
+			overflow-y: auto
+
+	
+
+		
+	
+	
+	
+
+
+
+	
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.container-fluid 
+		width: 89.333vw
+		max-width: 89.333vw
+	.header,
+	.main-screen 
+		.container-fluid
+			width: 89.333vw
+			max-width: 89.333vw
+	.main-screen__text-wrapper
+		width: 100%
+	.home-page 
+		background-image: url('../img/mob-bg.jpg')
+		background-size: 100vw
+		background-repeat: no-repeat 
+		background-position: top center
+	
+	.main-screen__title
+		color: #fff
+	.header 
+		padding: 2.933vw 0
+		height: auto
+	.logo 
+		width: 37.467vw
+	.menu-row
+		width: 7.867vw
+		height: 0.533vw
+		margin-bottom: 2.667vw
+		border-radius: 2vw
+	.main-screen__title
+		font-size: 13.333vw
+		margin-bottom: 5vw
+		span 
+			font-weight: 700
+	.main-screen__text
+		color: #fff
+		font-size: 5.100vw
+		margin-bottom: 6.667vw
+	.main-screen__input
+		width: 56.933vw
+		height: 11.467vw
+		font-size: 4.267vw
+	.main-screen-form__button
+		width: 40.667vw
+		height: 13.733vw
+		background: $green
+		color: $blue
+		font-weight: 700
+		margin-left: auto 
+		margin-right: auto
+		font-size: 5.333vw
+	.main-screen__form
+		margin-left: auto 
+		margin-right: auto
+	.slider-arrows
+		display: none
+	.main-screen__form-text
+		color: #fff
+	.main-screen__image
+		width: 150vw
+		max-width: 150vw
+		position: relative
+		left: 20vw
+		top: 0vw
+		margin-top: 4vw
+	.main-screen 
+		.container-fluid 
+			width: 100% 
+			max-width: 100%
+	.main-screen__text-wrapper,
+	.main-screen__form-wrapper
+		width: 89.333vw
+		margin-left: auto 
+		margin-right: auto
+	.main-screen
+		padding-top: 44vw
+	.slider-item
+		overflow: hidden
+	.mega-menu 
+		display: none
+	.menu-btn.active
+		.menu-row:last-child
+			display: none 
+		.menu-row:first-child 
+			transform: rotate(45deg)
+			margin-bottom: 0
+			position: relative
+			top: 0.6vw
+		.menu-row:nth-child(2) 
+			transform: rotate(-45deg)
+	.menu__link,
+	.header__right-link
+		font-size: 5vw
+	.header__button
+		width: 100% 
+		height: 14vw
+		font-size: 5vw
+	.main-screen 
+		background: none
+	.main-screen__form
+		height: auto
+	.main-screen__form-text-wrapper
+		font-size: 4.2vw
+		margin-top: 5vw
+		margin-bottom: 5vw
+	.header__right
+		padding-left: 5.333vw
+		padding-right: 5.333vw
+	.mega-menu 
+		display: none
+		position: static
+		padding-top: 0 
+		padding-left: 2.533vw
+	.mega-menu.active 
+		display: none
+	.menu__link
+		font-size: 5.333vw
+		margin-bottom: 9.333vw
+		width: 100%
+	.mega-menu__link
+		font-size: 5.333vw
+		font-weight: 200
+	.menu ul
+		padding-top: 10vw
+	.mega-menu__link
+		margin-bottom: 9.3vw
+	.header .menu__item--sub
+		color: #fff
+		.menu__link 
+			color: #fff 
+			font-weight: 700
+		.menu__link:hover 
+			color: #fff
+	.menu__item--sub.active
+		.menu__link 
+			color: $green
+		.menu__link:hover 
+			color: $green
+	.menu-arrow 
+		width: 2.5vw
+	.main-screen__input
+		display: none
+	.main-screen__text-wrapper
+		text-align: center
+	.main-screen__form-text-wrapper
+		margin-left: auto
+		margin-right: auto
+	.main-screen__title
+		margin-bottom: 10.267vw
+	.image-text
+		padding-top: 10vw
+		.row 
+			flex-direction: column-reverse
+	.h2 
+		text-align: center
+		font-size: 12vw 
+		font-weight: 700
+		margin-bottom: 5.333vw
+	.sub-title 
+		text-align: center
+		font-size: 4.800vw
+		margin-bottom: 5vw
+	.image-text__list-item
+		font-size: 4.8vw
+		margin-bottom: 2.267vw
+	.image-text__list-item-num
+		width: 10vw
+	.image-text 
+		.button-wrapper
+			justify-content: center
+			margin-bottom: 19.067vw
+	.button 
+		font-size: 4.267vw 
+		font-weight: 700
+		height: 11.400vw
+		padding: 0 5vw
+	.statistic
+		width: 100vw 
+		max-width: 100vw
+		top: 71vw
+		height: 26.933vw
+	.statistic__item-num
+		font-size: 10vw
+		margin-bottom: 1vw
+	.statistic__item-title
+		font-size: 3.600vw
+	.image-text__content .sub-title
+		width: 100%
+	.image-text
+		background: url('../img/screen.png')
+		background-repeat: no-repeat 
+		background-position: top 145vw center
+		background-size: 100vw
+	.ipad-image
+		width: 100%
+	// .tab
+	// 	display: none
+	.tab:first-child 
+		display: block
+	.image-text
+		padding-bottom: 0
+		overflow: hidden
+		padding-bottom: 35.6vw
+		.row 
+			margin-left: 0 
+			margin-right: 0
+			max-width: 100%
+	.what-trade
+		padding-top: 0
+		overflow: hidden
+		.row 
+			margin-left: 0 
+			margin-right: 0
+			max-width: 100%
+		.col-lg-4, 
+		.col-lg-8
+			padding-left: 0
+			padding-right: 0
+		.button-wrapper 
+			display: flex 
+			justify-content: center
+			margin-bottom: 18.667vw
+	.tab 
+		width: 100%
+		background: #f6f6f8
+	.tabs 
+		flex-direction: column
+		z-index: 99
+		position: relative
+		overflow: hidden
+		.tab:nth-child(1)
+			order: 5 
+			display: flex
+		.tab:nth-child(2)
+			order: 2
+		.tab:nth-child(3)
+			order: 3
+		.tab:nth-child(4)
+			order: 4
+		.tab:nth-child(5)
+			order: 5
+		.tab.active 
+			order: 1
+		.tab.active:first-child 
+			order: 1
+			display: flex
+	.tab.active 
+		background: #f6f6f8
+
+	.tabs.active 
+		overflow: visible
+	// .tab 
+	// 	display: block
+	// .tab.active 
+	// 	order: 1
+	// .tab:first-child 
+	// 	order: 5
+	// .tab.active:first-child 
+	// 	order: 1
+	.tab
+		z-index: 999 
+		position: relative
+		min-height: 11.333vw
+		color: #a6a9bf
+		font-size: 4.267vw
+	.tab.active 
+		color: #a6a9bf
+		font-weight: 700
+	.tab.active:after 
+		content: ''
+		width: 3vw
+		height: 1.867vw
+		background: url('../img/down.svg')
+		background-size: 100%
+		background-position: center
+		background-repeat: no-repeat
+		margin-left: 2vw
+
+	.down 
+
+		display: block
+		z-index: 99999
+		width: 100% 
+		height: 11.333vw
+	.tab-next,
+	.tab-prev
+		display: none !important
+	.tabs 
+		margin-bottom: 0
+	.tab-slider__item-content
+		padding: 10.6vw 1.333vw
+	.what-trade
+		.container-fluid 
+			max-width: 100vw 
+			width: 100vw
+	.what-trade__content
+		width: 89.333vw
+		margin-left: auto 
+		margin-right: auto
+	.tabs 
+		width: 89.333vw
+		margin-left: auto 
+		margin-right: auto
+		height: 11.333vw
+	.tab-slider__item-content
+		height: 75.200vw
+		padding: 7.333vw 4vw 5vw 4vw
+	.tab-slider__item-title
+		font-size: 4.267vw
+		margin-bottom: 8vw
+	.tab-slider__col-title
+		font-size: 3.600vw
+	.value
+		font-size: 5.100vw
+		min-height: 9vw
+		margin-bottom: 1vw
+		span 
+			font-size: 6.133vw
+	.tab-slider__button
+		width: 18.667vw
+		min-width: 18.667vw
+		height: 8.400vw
+		font-size: 3.684vw
+		margin: 0 0vw
+	.tab-slider__buttons 
+		margin-left: 4vw 
+		margin-right: 4vw
+	.calc-link
+		font-size: 4.172vw
+	.tools-prev,,
+	.tools-next 
+		display: none !important
+	.what-trade
+		padding-bottom: 16vw
+	.tools
+		padding-top: 16vw
+	.tools-slider-wrapper 
+		margin-top: 12vw
+	.tools-slider__img
+		width: 60vw
+	.tools-slider__item-content
+		width: 100%
+		margin-left: auto 
+		margin-right: auto
+	.tools-slider__img-wrapper
+		min-height: auto
+	.h3 
+		font-size: 6.827vw
+	body 
+		font-size: 4.267vw
+	.tools-slider__img-wrapper
+		margin-bottom: 5.333vw
+	.tools-slider__list-item:before
+		font-size: 6.8vw
+	.tools-slider .slick-dots
+		margin-top: 7vw
+	.tools-slider .slick-dots li 
+		width: 2.267vw
+		height: 2.267vw
+	.tools 
+		background-position: top 10vw center
+		padding-bottom: 19.333vw
+	.tools .h2
+		padding-top: 0
+	.tools-slider .slick-dots
+		margin-top: 0
+	.tools-slider__list
+		margin-bottom: 0
+	.two-section
+		background-position: top -30vw center
+	.trade
+		margin-top: 0
+		overflow: hidden
+		.button-wrapper
+			justify-content: center
+			padding-top: 10vw
+	.man
+		max-width: 255vw
+		width: 255vw
+		left: -7vw
+		top: 0%
+		position: relative
+		margin-bottom: 10vw
+	.trade
+		background-size: 371vw 
+		background-position: left 0vw top 116vw
+	.tab-slider-wrapper
+		width: 100%
+	.partner 
+		.h2 
+			br 
+				display: none
+		.image-mobile 
+			display: block 
+			width: 100%
+			margin-bottom: 13.333vw
+		.image-desctop
+			display: none
+		.calc-link--left
+			text-align: center
+			width: 70vw
+			margin-left: auto 
+			margin-right: auto
+			margin-top: 0
+		.button-wrapper
+			margin-bottom: 8vw
+			margin-top: 6vw
+	.partner .image-text__content
+		width: 100%
+	.trade 
+		.h2 
+			br 
+				display: none
+	.form-section__right
+		padding-top: 15.867vw
+	.form-section
+		padding-top: 18vw
+		padding-bottom: 19.200vw
+	.form-wrapper
+		width: 75.333vw
+		height: 152.933vw
+		padding: 12.8vw 6.400vw 7.600vw 6.400vw 
+		border-radius: 12vw
+	.form-section
+		
+		.button-wrapper
+			justify-content: center
+			display: flex
+			margin-top: 10vw
+	.form-logo
+		width: 29.600vw
+	.form-title
+		font-size: 7.680vw
+	.form-logo
+		margin-bottom: 7vw
+	.form-sub-title
+		font-weight: 200
+		font-size: 4.320vw
+		margin-bottom: 5.333vw
+	.select,
+	.input 
+		height: 11.299vw
+		padding: 0 3.267vw
+		margin-bottom: 4.533vw
+	.form-wrapper .button
+		margin-top: 3vw
+	.form-footer__text
+		padding-top: 3vw
+	.form-footer
+		font-size: 3.840vw
+	.form-section__title
+		text-align: center
+		font-size: 10.133vw
+		margin-bottom: 10
+	.steps-list
+		width: 61.333vw
+		margin-left: auto 
+		margin-right: auto
+	.step-circle
+		width: 15.600vw
+		min-width: 15.600vw
+		height: 15.600vw
+		padding: 1.067vw
+		font-size: 6.912vw
+	.step-item
+		margin-bottom: 11.333vw
+	.step-item__title
+		font-size: 6.933vw
+		margin-bottom: 1vw
+	.step-item__text
+		font-size: 4.267vw
+	.step-circle:after
+		height: 16.5vw
+	.logo-item
+		width: 15vw 
+		max-width: 15vw 
+		max-height: 25vw 
+		height: auto
+	.logos-section__title
+		font-size: 6.933vw
+		line-height: 1.2
+		margin-bottom: 10vw
+	.logos-section
+		padding-top: 22vw 
+		padding-bottom: 22vw
+	.footer-menu__item-content
+		display: none
+	.footer 
+		padding-top: 19.733vw
+		padding-bottom: 13.333vw
+	.sitemap-wrapper
+		display: none
+	.footer-content__bottom
+		justify-content: center
+	.desclimer
+		font-size: 3.200vw
+	.footer__select
+		width: 36.267vw
+		height: 7.733vw
+		font-size: 4vw
+		background-size: 2.520vw
+		background-position: right 2.600vw center
+	.copy,
+	.footer-copy-menu
+		font-size: 4vw
+		font-weight: 200
+	.footer-content__bottom
+		margin-top: 21.333vw
+		margin-bottom: 8vw
+	.footer-logo img
+		width: 45.333vw
+	.footer-menu__title
+		background-image: url('../img/dow.svg')
+		background-repeat: no-repeat 
+		background-position: right center
+		background-size: 2.5vw
+	.footer-menu__item
+		font-size: 5.333vw
+		margin-bottom: 5.333vw
+	.footer-menu__item.active
+		.footer-menu__title
+			background-image: url('../img/dow2.svg')
+			background-repeat: no-repeat 
+			background-position: right center
+			background-size: 4vw
+	.footer-logo img
+		margin-top: 20vw
+	.form-circles
+		max-width: 140vw
+		width: 140vw
+	.form-section
+		overflow: hidden
+	.section-footer-button
+		margin-bottom: 5.067vw
+	.section-footer-button
+		width: 58.933vw
+		height: 11.200vw
+	.build-different .tabs .tab
+		width: 100%
+	.section-footer-buttons
+		flex-direction: column
+	.whyecho-main-screen__item
+		width: 100%
+	.whyecho-main-screen .col-md-4
+		padding-top: 0
+		min-height: auto
+
+	.guy-img
+		position: static
+		width: 135vw
+		max-width: 135vw
+		transform: translateX(-19vw)
+	.whyecho-main-screen 
+		overflow: hidden
+	.h1 
+		font-size: 13.333vw
+		margin-bottom: 12vw
+	.whyecho-main-screen
+		padding-top: 27.200vw
+		.h3 
+			text-align: center
+	.whyecho-main-screen__item
+		margin-top: 8vw
+	.whyecho-main-screen
+		padding-bottom: 32vw
+		background-size: 244vw
+		background-position: left bottom
+	.ready-to-go
+		.col-lg-4:nth-child(3)
+			order: 1
+		.col-lg-4:nth-child(1)
+			order: 2
+		.col-lg-4:nth-child(2)
+			order: 3
+	.whyecho-two-section
+		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom 0vw center / 770vw no-repeat
+	.ready-to-go
+		padding-top: 0
+	.ready-to-go__item
+		margin-top: 7.467vw
+		width: 100% 
+		height: auto
+		padding: 8vw
+	.ready-to-go__item-title,
+	.ready-to-go__item-row-value
+		font-size: 6.933vw
+	.ready-to-go__item .line
+		width: 15vw
+	.ready-to-go__item-footer
+		font-size: 3.467vw
+	.ready-to-go__footer
+		flex-direction: column
+		text-align: center
+	.ready-to-go__footer-text
+		margin-right: 0
+		font-size: 6.667vw
+		margin-bottom: 10vw
+	.form-section__big-title
+		margin-bottom: 10vw
+	.what-trade__content p
+		width: 100%
+	.sub-title
+		font-weight: 500
+		margin-bottom: 9.333vw
+	.h2 
+		margin-bottom: 9.333vw
+	.tools-slider__list
+		padding-left: 6.667vw
+	.tools-slider__list-item:before
+		margin-right: 2vw
+	.partner
+		padding-top: 0
+	.trade
+		padding-bottom: 36vw
+	.form-section__right
+		padding-top: 16.667vw
+		margin-top: 0
+	.tab-slider .slick-center .tab-slider__item-content
+		transform: scale(1)
+	.logos-section__title
+		max-width: 50vw
+		br 
+			display: none
+	.main-screen__form-wrapper
+		flex-direction: column 
+		align-items: center
+	.main-screen__form-text
+		margin-left: 0
+
+
+	
+
+
+
+
+
+	
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+
+	
+	
+
+	
+
+	
+
+
+	
+		
+	
+	
+
+		
 
 
 /* Extra Small Devices, Phones */

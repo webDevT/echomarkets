@@ -1,6 +1,1101 @@
 @import "vars"
 @import "fonts"
 
+//start global style
+body 
+    font-family: $main-font
+    font-size: 16px
+    color: $text-color
+.container-fluid 
+    padding-left: 0 
+    padding-right: 0
+    max-width: 95.625vw
+    width: 1130px
+a,
+a:hover 
+    text-decoration: none
+.h1 
+    font-size: 60px 
+    font-weight: 200
+    color: #03158F
+    margin-bottom: 50px
+.h2 
+    color: $green
+    font-size: 48px 
+    font-weight: 700
+    margin-bottom: 18px
+.h3 
+    font-size: 26px 
+    font-weight: 700 
+    color: $blue
+    line-height: 1.2
+    margin-bottom: 20px
+.sub-title 
+    font-size: 18px
+    margin-bottom: 18px
+.button 
+    background: $blue
+    display: flex 
+    justify-content: center
+    align-items: center
+    height: 42.77px
+    padding: 0 20px
+    color: $green
+    font-weight: 700
+    border: none
+    transition: all 0.5s
+
+.button:hover 
+    color: $green
+    transform: scale(1.05)
+    -webkit-font-smoothing: antialiased
+.button--green 
+    background: $green
+    color: $blue
+.button--green-white
+    color: #fff
+    background: #00AD6A
+.button--green:hover 
+    color: $blue
+.button-wrapper 
+    display: flex 
+    justify-content: flex-start
+.header__button,
+.main-screen-form__button
+    transition: all 0.5s
+.header__button:hover,
+.main-screen-form__button:hover
+    transform: scale(1.05)
+    -webkit-font-smoothing: antialiased
+.tools-slider__list-item
+    color: $green
+    font-weight: 300
+    line-height: 1.8
+    span 
+        color: $text-color
+        font-weight: 200
+.tools-slider__list
+    padding-left: 0
+//end global style
+
+
+//start header style
+.header 
+    padding-top: 46px
+    font-size: 15px
+    transition: all 0.5s
+    position: absolute
+    top: 0 
+    left: 0 
+    width: 100%
+    background: #fff
+    padding: 11px 0
+    border-bottom: 2px solid #f1f1f2
+    z-index: 999
+    .container-fluid    
+        width: 1380px 
+        max-width: 95.625vw
+        display: flex
+        justify-content: space-between
+        align-items: center
+.logo 
+    width: 143px
+    position: relative
+    z-index: 999
+    img 
+        width: 100%
+.header__left 
+    display: flex 
+    align-items: center
+.header__right 
+    width: calc( 100% - 143px)
+    display: flex 
+    justify-content: space-between
+.header-right-wrapper
+    display: flex 
+    align-items: center
+.menu 
+    ul 
+        padding: 0 
+        margin: 0 
+        list-style: none
+        display: flex
+        align-items: center
+.menu__item
+    padding-left: 35px
+    
+.menu__link
+    font-weight: 500   
+    color: #001695
+    position: relative
+    z-index: 99
+    display: flex
+    align-items: center
+    text-transform: uppercase
+.menu__item--sub .menu__link:after 
+    content: ''
+    width: 12px 
+    height: 8px 
+    background: url('../img/rellower.svg')
+    background-size: 100%
+    background-repeat: no-repeat 
+    background-position: center
+    margin-left: 5px
+.menu__link:hover
+    color: #00E78E
+
+.header__right
+    display: flex 
+    align-items: center
+    position: relative
+    z-index: 999
+.header__button
+    background: $green
+    height: 48px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    padding: 0 20px
+    font-size: 18px 
+    font-weight: 700
+    margin-left: 29px
+    color: $blue
+.header__button:hover 
+    color: $blue
+.header__right-link
+    margin-left: 33px
+    color: #03158f
+    font-weight: 500
+.header__right-link:hover 
+    color: #03158f
+.logo-white 
+    display: none
+    transition: all 0.5s
+.header 
+    transform: translateY(0%)
+    position: fixed
+.header.hide 
+    transform: translateY(-100%)
+    transition: all 0.5s
+.header.sticky 
+    background: #03158f
+    border-bottom: none
+    transform: translateY(0%)
+    position: fixed
+    .logo-white 
+        display: block
+    .logo-blue 
+        display: none
+    .menu__link
+        color: #fff
+    .menu__link:hover 
+        color: $green 
+    .header__right-link
+        color: #fff
+.header 
+    transition: all 0.5s
+    height: 66px
+.header.dropdown
+    background: rgba(#03158f, 0.9)
+    height: 500px
+    
+    .logo-white 
+        display: block
+    .logo-blue 
+        display: none
+    .menu__link
+        color: #fff
+    .menu__link:hover 
+        color: $green 
+    .header__right-link
+        color: #fff
+//end header style
+
+//start mega menu style
+// .mega-menu-bg
+//     position: fixed 
+//     top: 0 
+//     left: 0 
+//     width: 100% 
+//     height: 0px
+//     background: rgba(#03158f, 0.9)
+//     overflow: hidden
+//     height: 0
+//     transition: all 0.5s
+
+.mega-menu-bg.active 
+    height: 500px
+.menu 
+    position: relative
+.mega-menu 
+    position: absolute
+    top: 100%
+    left: 0 
+    width: 100% 
+    display: none
+    padding-top: 44px
+    color: #fff
+    font-size: 16px
+    padding-left: 35px
+.mega-menu.active 
+    height: 500px
+    display: block
+
+.menu__item--sub:hover .mega-menu .container-fluid
+    color: green
+
+
+.menu__item .menu__link.hover 
+    color: $green
+.mega-menu__title
+    display: block 
+    color: $green
+    margin-bottom: 26px
+    font-weight: 600
+.mega-menu__title:hover 
+    color: $green
+.mega-menu__link
+    font-weight: 300 
+    color: #fff 
+    display: block
+    margin-bottom: 26px
+.mega-menu__link:hover 
+    color: #fff
+//end mega menu style
+
+//start main screen style
+.main-screen 
+    position: relative
+    z-index: 1
+    padding-top: 80px
+    background: url('../img/bg.png')
+    background-repeat: no-repeat
+    background-position: top right
+    background-size: 63vw
+    padding-bottom: 8vw
+
+.main-screen__content
+    width: 100% 
+    //display: flex 
+    justify-content: space-between
+.main-screen__image
+    width: 670px
+    position: relative
+    top: 1vw
+ 
+
+
+
+
+
+
+    //margin-right: 20px
+.main-screen__text-wrapper
+    padding-top: 60px
+    width: 461px 
+    max-width: 100%
+
+.main-screen__title
+    font-size: 72px
+    font-weight: 200
+    line-height: 1.2
+    color: $blue
+    margin-bottom: 30px
+    span 
+        display: block
+        color: #8AEB85
+        font-weight: 700
+.main-screen__text
+    font-size: 20px
+    font-weight: 300
+.main-screen__form-wrapper
+    display: flex 
+    align-items: center
+.main-screen__form-wrapper
+    margin-top: 50px
+.main-screen__form
+    height: 44px
+    display: flex
+.main-screen__input
+    width: 277px
+    height: 100%
+    padding: 0 13px
+    border: 1px solid #A6A9BF
+    outline: none
+.main-screen__input::placeholder 
+    color: #A6A9BF
+.main-screen__input:focus::placeholder 
+    color: transparent
+.main-screen-form__button
+    width: 121.5px
+    height: 100%
+    border: none 
+    background: $blue
+    color: $green
+.main-screen__form-text
+    margin-left: 13px
+    font-weight: 300
+.main-screen__form-text
+    color: #424659
+.main-screen__link
+    color: #00ad6a
+    display: block
+    margin-left: 7px
+    font-weight: 700
+.main-screen__link:hover
+    color: #00ad6a
+.main-screen__content
+    position: relative
+.slider-arrows 
+    position: absolute
+    right: 153px
+    bottom: 28px
+    display: flex 
+    align-items: center
+.next,
+.prev
+    cursor: pointer
+    margin: 0 15px
+.main-screen 
+    .container-fluid 
+        //width: 1600px
+        //max-width: 95.625vw
+    .col-md-6:last-child 
+        display: flex
+        justify-content: flex-end
+        align-items: center
+.main-screen__form-text-wrapper
+    display: flex
+    align-items: center
+.menu-arrow
+    display: none
+//end main screen style 
+
+//start image-text style
+.image-text 
+    padding-top: 175px
+    padding-bottom: 100px
+    background: url('../img/trendline.png')
+    background-position: bottom left 
+    background-repeat: no-repeat 
+    background-size: 100%
+.ipad-image
+    box-shadow: 0px 1px 48.399px 2.6009999999999995px rgba(0, 173, 106, 0.33)
+    border-radius: 40px
+    width: 380px
+    margin-left: auto 
+    margin-right: auto
+    display: block
+.three-sections-wrapper
+    background: url('../img/sec-bg.png')
+    background-repeat: no-repeat
+    background-position: top 715px left 0
+.image-text__content
+    max-width: 100%
+    .sub-title 
+        width: 375px 
+        max-width: 100% 
+
+.image-text__list
+    margin-bottom: 28px
+    font-size: 18px 
+    font-weight: 200  
+.image-text__list-item
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    font-size: 18px 
+    font-weight: 200
+.image-text__list-item-num
+    font-weight: 800
+    width: 39px
+    color: $green
+.image-text__image-wrapper
+    position: relative
+.statistic
+    height: 140px
+    width: 521px 
+    max-width: 100%
+    background: rgba(#00e78e, .9)
+    position: absolute 
+    top: 292px 
+    left: 50% 
+    transform: translateX(-50%)
+    display: flex
+    align-items: center
+    justify-content: space-between
+.statistic__item
+    width: 33.3%
+    display: flex 
+    align-items: center 
+    justify-content: center
+    height: 100%
+    flex-direction: column
+    
+.statistic__item:nth-child(2)
+    background: red
+    background: #00e78e
+.statistic__item-num
+    color: #fff
+    font-size: 42px 
+    font-weight: 800
+    line-height: 1
+.statistic__item-title
+    font-size: 16px
+    color: $blue   
+//end image-text style
+
+//start what trade style
+.what-trade 
+    padding-top: 120px
+    padding-bottom: 0px
+.what-trade__content
+    p 
+        margin-bottom: 30px
+        font-weight: 200
+        width: 297px 
+        max-width: 100%
+.tabs
+    background: #F6F6F8
+    display: flex
+    justify-content: space-between
+    width: 615px 
+    max-width: 100%
+    height: 41px
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 20px
+.tab 
+    height: 100%
+    min-width: 98px
+    align-items: center
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    color: #A6A9BF
+    font-size: 14px
+    font-weight: 500
+.tab.active 
+    background: $blue
+    color: $green
+    font-weight: 700
+.tab__item 
+    display: none
+.tab__item:first-child 
+    display: block
+.tab-slider-wrapper 
+    position: relative
+    width: 635px
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto 
+.tab-prev
+    position: absolute 
+    left: -25px 
+    top: 50% 
+    transform: translateY(-50%) translateX(-100%)
+    cursor: pointer
+.tab-next
+    position: absolute 
+    right: -25px 
+    top: 50% 
+    transform: translateY(-50%) translateX(100%)
+    cursor: pointer
+
+.tab-slider__item-content
+    background: #fff
+    box-shadow: 0px 0px 20px #ececf1
+    height: 232px
+    transition: all 0.3s
+.tab-slider .slick-center
+    .tab-slider__item-content
+        transform: scale(1.1)
+.tab-slider__item
+    padding: 30px 12px
+    
+.tab-slider__item-content
+    padding: 25px 10px 
+.tab-slider__item-title
+    font-size: 19px 
+    font-weight: 800
+    color: $blue
+    text-align: center
+    margin-bottom: 15px
+.tab-slider__row
+    display: flex 
+    flex-wrap: wrap 
+.tab-slider__col
+    width: 50%   
+    min-height: 50px
+    margin-bottom: 5px
+.tab-slider__col-title
+    font-size: 11.42px 
+    font-weight: 500
+    color: #A6A9BF
+.value 
+    
+    font-size: 15.81px
+    span 
+        font-size: 19.32px
+        line-height: 0.9
+.red
+    color: #D12E36
+.blue
+    color: $blue
+.green 
+    color: #00AD6A
+.tab-slider__button
+    width: 58px 
+    height: 26px 
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    border: 1px solid #ECECF1
+    margin: 0 10px
+    font-size: 11.42px 
+    font-weight: 500
+.tab-slider__buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 5px
+.tab-slider__button.green:hover 
+    color: #00AD6A
+.tab-slider__button.red:hover 
+    color: #D12E36 
+.calc-link
+    text-align: center 
+    font-weight: 300
+    a 
+        font-weight: 700
+.calc-link
+    font-size: 15.64px
+    a.green:hover 
+        color: #00AD6A
+//end what trade style
+
+//start tools style
+.two-section
+    background: url('../img/bg-tool.png')
+    background-size: cover
+    background-position: top center
+    
+.tools 
+    padding-top: 107px
+    .h2 
+        padding-top: 110px
+   
+.tools-slider-wrapper
+    margin-top: 50px
+.tools-slider-wrapper
+    width: 975px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto  
+.tools-slider__img
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+.tools-slider__img-wrapper
+    min-height: 240px 
+    display: flex 
+    align-items: flex-end 
+    justify-content: center
+    margin-bottom: 20px
+.tools-slider__item-content
+    width: 250px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+.tools-slider
+    .slick-dots 
+        display: flex
+        justify-content: center
+        padding: 0 
+        margin: 0 
+        list-style: none  
+        margin-top: 30px
+        li 
+            margin: 0 11.5px
+            width: 8px 
+            height: 8px
+            padding: 0
+            button 
+                font-size: 0
+                border-radius: 50%
+                padding: 0
+                width: 100% 
+                height: 100% 
+                border-radius: 50%
+                background: transparent
+                border: 2px solid $blue
+                cursor: pointer
+        .slick-active 
+            button 
+                background: $green
+                border-color: $green
+.tools-slider__list
+    list-style: none
+.tools-slider__list-item
+    display: flex
+    align-items: flex-start
+
+.tools-slider__list-item:before 
+    content: '›'
+    font-size: 25px
+    margin-right: 7px
+    line-height: 0.9
+.tools-slider-wrapper
+    position: relative
+.tools-prev,
+.tools-next 
+    cursor: pointer
+    position: absolute
+    z-index: 99
+.tools-prev
+    left: 0
+    top: 50%
+    transform: translateY(-50%) translateX(-100%)
+.tools-next
+    right: 0 
+    top: 50% 
+    transform: translateY(-50%) translateX(100%)
+
+//end tools style
+
+//start trade style
+.trade 
+    position: relative
+    min-height: 500px
+    margin-top: 100px
+    padding-bottom: 100px
+    padding-top: 70px
+    background-image: url('../img/tradeline.png')
+    background-repeat: no-repeat
+    background-size: 100%
+    background-position: bottom center
+    padding-bottom: 160px
+.man 
+    max-width: 70vw
+    position: absolute 
+    top: 0 
+    left: 0px
+
+.anim
+    transition: all 1s
+    opacity: 0 
+    transform: translateY(10%)
+.animShow
+    opacity: 1   
+    transition: all 1s
+    transform: translateY(0%)
+.image-text--no-line
+    background: none
+.calc-link--left
+    margin-left: 0
+    text-align: left   
+    margin-top: 26.9px
+//end trade style
+
+//start partner style
+.partner 
+    padding-bottom: 200px
+    .image-mobile
+        display: none
+    .button 
+        margin-top: 10px
+    .image-text__content
+        width: 450px 
+        max-width: 100%
+//end partner style
+
+//start form-section style
+.form-section
+    padding-top: 64px
+    padding-bottom: 64px
+    background: url('../img/form-bg.png')
+    background-size: cover
+.form-section
+    background: url('../img/form-bg2.png')
+    background-size: cover
+.form-wrapper
+    margin-left: auto 
+    margin-right: auto
+    width: 375px 
+    max-width: 100%
+    position: relative
+    z-index: 2
+.form-wrapper-wrapper
+    position: relative
+.form-circles
+    position: absolute 
+    top: 50%
+    left: 50% 
+    transform: translateX(-50%) translateY(-50%)
+.form-section__title
+    color: #fff
+    font-size: 38px 
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 40px
+.form-section__right
+    height: 100% 
+    display: flex 
+    flex-direction: column 
+    justify-content: center
+    margin-top: -25px
+.step-item
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+.step-circle
+    color: #fff
+    font-size: 25.92px
+    font-weight: 700
+    width: 59px 
+    height: 59px
+.step-circle-wrapper
+    
+    background: #00e78e
+    border-radius: 50% 
+    display: flex 
+    justify-content: center
+    align-items: center
+    line-height: 1
+    width: 100% 
+    height: 100%
+.step-circle
+    margin-right: 19px
+.step-circle
+    padding: 4px
+    border: 1px solid #00e78e
+    border-radius: 50%
+.step-item__title
+    font-size: 26px 
+    font-weight: 700
+    color: $green
+    line-height: 1
+    margin-bottom: 5px
+.step-item__text
+    color: #fff
+    font-weight: 200
+.step-circle
+    position: relative
+.step-circle:after 
+    content: ''
+    width: 1px 
+    height: 41px
+    background: $green
+    position: absolute 
+    left: 50% 
+    top: 100%
+.step-item:nth-child(3) .step-circle:after 
+    display: none
+.form-wrapper
+    width: 285px
+    height: 574px
+    background: url('../img/form-phone.png')
+    background-size: 100%
+    border-radius: 48px
+    box-shadow: -6px 19px 48.399px 2.6009999999999995px rgba(35, 35, 35, 0.33)
+    padding: 48px 25px 30px 25px
+.form-logo 
+    width: 112px
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    margin-bottom: 32px
+.form-header
+    text-align: center
+.form-title
+    font-weight: 700
+    font-size: 28.8px
+    text-align: center
+    color: $green    
+.form-sub-title
+    margin-bottom: 20px
+.select,
+.input 
+    width: 100%
+    height: 42px
+    margin-bottom: 18px
+    padding: 0 14px
+    background: #ffffff
+    border: 1px solid #ececf1
+    outline: none
+.select 
+    color: #A6A9BF
+    cursor: pointer
+    background-image: url('../img/select-down.svg')
+    background-repeat: no-repeat
+    background-position: right 12px center
+.input::placeholder 
+    color: #A6A9BF
+.input:focus::placeholder 
+    color: transparent
+select
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+select::-ms-expand
+    display: none
+.form-wrapper
+    .button 
+        margin-left: auto 
+        margin-right: auto
+        margin-top: 10px
+.form-footer
+    text-align: center
+    font-size: 14.4px
+.form-footer__text
+    padding-top: 17px
+    font-weight: 300
+.form-footer__link
+    color: $green
+    text-decoration: underline  
+    font-weight: 700
+
+//end form-section style
+.image-text__content
+    p 
+        width: 300px 
+        max-width: 100%
+//start logos style 
+.logos-section
+    padding-top: 90px 
+    padding-bottom: 90px
+    .container-fluid 
+        display: flex 
+        justify-content: space-between
+        align-items: center
+.logos-section__title
+    font-size: 26px 
+    font-weight: 700
+    color: $green
+.logos-section__title
+    width: 218px
+.logos-wrapper
+    width: calc( 100% - 218px )
+    display: flex 
+    justify-content: space-between
+.logo-item
+    max-height: 40px
+    max-width: 85px 
+    display: block
+    margin-left: 5px 
+//end logos style
+
+
+//start footer style 
+.footer 
+    background: #EAFAF4
+    padding-top: 100px 
+    padding-bottom: 100px
+    font-size: 15px
+.footer-logo
+    margin-bottom: 26px
+    img 
+        width: 175px
+.copy 
+    margin-top: 26px
+    margin-bottom: 10px
+.footer-copy-menu
+    display: flex 
+    align-items: center
+    span 
+        display: block 
+        margin: 0 10px
+.copy,
+.footer-copy-menu
+    font-size: 15px 
+    font-weight: 200
+    a 
+        color: #424659
+.footer-menu__link
+    display: block
+    color: #424659
+.footer-menu__link:hover 
+    color: #424659
+.footer-menu__title
+    font-weight: 700
+.footer-menu__link
+    font-weight: 200
+    margin-top: 10px
+.footer-menu__item
+    margin-bottom: 35px
+.footer-content__bottom
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    margin-top: 60px
+    margin-bottom: 40px
+.sitemap-wrapper
+    display: flex
+.footer__select
+    width: 136px 
+    height: 29px
+    border: 1px solid #A6A9BF
+    background: transparent
+    color: #A6A9BF
+    outline: none
+    padding: 0 8.8px
+    cursor: pointer
+    background-image: url('../img/select-down.svg')
+    background-repeat: no-repeat 
+    background-position: right 8px center
+.sitemap-wrapper
+    display: flex 
+    align-items: center
+    color: #A6A9BF
+    span 
+        display: block
+        margin-left: 10px 
+        margin-right: 10px   
+.sitemaplink,
+.sitemaplink:hover
+    color: #00AD6A
+    text-decoration: underline
+.desclimer
+    font-size: 12px 
+    font-weight: 300
+//end footer style 
+.dur
+    --animate-duration: 1.5s !important
+
+//start whyecho
+
+.build-different   
+    .tabs 
+        margin-top: 55px
+        margin-bottom: 55px
+        .tab 
+            width: 33%
+.dif-image
+    position: relative 
+    top: -20px
+.whyecho-two-section
+    background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -25vw center / cover
+.form-section--alternative
+    color: #fff
+    .form-section__right
+        width: 442px 
+        max-width: 100%
+.form-section__big-title
+    font-size: 55px 
+    font-weight: 200
+    line-height: 1.2
+    span 
+        font-weight: 800
+        color: $green
+.section-footer-buttons
+    display: flex 
+    justify-content: center
+    align-items: center
+.section-footer-button
+    width: 204px
+    margin: 0 12px
+    padding-left: 0px 
+    padding-right: 0px
+.tools--no-padding
+    padding-top: 50px
+    .h2 
+        padding-top: 0
+
+//start whyecho main screen
+.whyecho-main-screen
+    padding-top: 130px
+    padding-bottom: 150px
+    background: url('../img/trendline2.png')
+    background-position: bottom center
+    background-size: 100%
+    background-repeat: no-repeat
+    .col-md-4
+        position: relative
+        min-height: 580px
+        padding-top: 150px
+        
+.guy-img
+    display: block
+    margin-left: auto 
+    margin-right: auto
+    position: absolute 
+    left: 50% 
+    transform: translateX(-50%)
+    bottom: 0
+.whyecho-main-screen__item
+    width: 237px 
+    max-width: 100%
+    p 
+        font-weight: 200 
+        font-size: 18px
+.whyecho-main-screen__item
+    margin-left: 50px
+.whyecho-text
+    font-size: 26px
+    margin-top: 20px
+    margin-bottom: 30px
+//end why echo main screen 
+
+//start ready to go 
+
+//end ready to go 
+.ready-to-go
+    padding-bottom: 200px
+    padding-top: 145px
+.ready-to-go__item
+    width: 325px
+    max-width: 100%
+    height: 484px
+    box-shadow: 0px 0px 20px rgba(66, 70, 89, 0.1)
+    background: #fff
+    padding: 30px
+    text-align: center
+    .line 
+        width: 100px
+        height: 1px
+        background: $green
+        margin-left: auto 
+        margin-right: auto
+        margin-top: 10px 
+        margin-bottom: 10px
+.ready-to-go__item-title 
+    font-size: 26px 
+    font-weight: 800
+    color: $blue
+    margin-bottom: 20px
+    line-height: 1
+.ready-to-go__item-row-title,
+.ready-to-go__item-row-text
+    font-weight: 200
+.ready-to-go__item-row-text
+    line-height: 1
+.ready-to-go__item-row-value
+    font-size: 26px 
+    font-weight: 700 
+    color: $green
+.ready-to-go__item-footer
+    font-size: 13px
+    line-height: 1
+    margin-top: 20px
+    font-weight: 200
+    a,
+    a:hover
+        color: $green
+.ready-to-go__footer
+    display: flex 
+    align-items: center
+    justify-content: center
+    margin-top: 50px
+.ready-to-go__footer-text
+    font-weight: 800 
+    color: #A6A9BF
+    margin-right: 40px
+.ready-to-go__item
+    margin-left: auto 
+    margin-right: auto
+.main-screen__form-text-wrapper
+    white-space: nowrap
+//end whyecho
 
 
 
