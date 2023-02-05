@@ -14,13 +14,18 @@
 			//width: 1356px
 	.whyecho-two-section
 		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -30vw center / cover
+	.forexspread-sections
+		background-position: bottom 38vw center
 
 @media only screen and (max-width : 1440px)
 	.image-text,
-	.whyecho-main-screen
+	.page-main-screen
 		background-size: 1440px
 	.whyecho-two-section
 		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -35vw center / cover
+	.forexspread-sections
+		background-size: 1440px
+		background-position: bottom 40vw center
 	
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1600px)
@@ -40,6 +45,21 @@
 	.main-screen
 		background-size: 1070px
 		background-position: right -170px top 
+	.guy-left
+		height: 32vw
+		left: -10vw
+	.guys-bg
+		left: -10vw
+		width: 60vw
+	.guy-right
+		height: 30vw
+		left: 27.5vw
+	.phones3
+		position: absolute
+		left: 3vw
+		top: -1vw
+		height: 39vw
+	
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1370px)
 	/**/
@@ -375,6 +395,69 @@
 		.header__right
 			height: 100vh
 			overflow-y: auto
+	.guys-bg
+		left: -12vw
+		width: 60vw
+		height: 40vw
+	.guy-right
+		height: 40vw
+		left: 18vw
+		top: 8vw
+	.phones3
+		position: absolute
+		left: -6vw
+		top: 6vw
+		height: 48vw
+	.guy-left
+		position: absolute
+		left: -19vw
+		top: 5vw
+		height: 45vw
+	.trade
+		.image-text__content
+			padding-left: 5vw
+			padding-top: 5vw
+			.h2 
+				br 
+					display: none
+	.bid-ask-item__value
+		font-size: 28px
+		span 
+			font-size: 38px
+	.currency-item__col
+		width: 49%
+	.bid-ask-item__text
+		font-size: 14px
+	.currency-item__value
+		font-size: 28px
+		span 
+			font-size: 38px
+	.currency-item__header-title
+		font-size: 30px
+	.ready-to-go
+		.col-lg-4:nth-child(3)
+			order: 1
+			margin-bottom: 5vw
+		.col-lg-4:nth-child(1)
+			order: 2
+		.col-lg-4:nth-child(2)
+			order: 3
+	.tab-content
+		width: 100vw
+		overflow: auto
+		padding-bottom: 6.400vw
+	.tab__item
+		width: 964px
+	.tab-content::-webkit-scrollbar
+		width: 4px
+		height: 2.667vw
+		background-color: #fff
+	.tab-content::-webkit-scrollbar-thumb
+		border-radius: 10vw
+		background-color: #00ad6a
+	
+ 
+
 
 	
 
@@ -942,7 +1025,7 @@
 		width: 135vw
 		max-width: 135vw
 		transform: translateX(-19vw)
-	.whyecho-main-screen 
+	.page-main-screen 
 		overflow: hidden
 	.h1 
 		font-size: 13.333vw
@@ -957,13 +1040,7 @@
 		padding-bottom: 32vw
 		background-size: 244vw
 		background-position: left bottom
-	.ready-to-go
-		.col-lg-4:nth-child(3)
-			order: 1
-		.col-lg-4:nth-child(1)
-			order: 2
-		.col-lg-4:nth-child(2)
-			order: 3
+	
 	.whyecho-two-section
 		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom 0vw center / 770vw no-repeat
 	.ready-to-go
@@ -1018,6 +1095,122 @@
 		align-items: center
 	.main-screen__form-text
 		margin-left: 0
+	.guy-wrap
+		position: relative
+	.guys-bg
+		position: relative
+		width: auto
+		height: 112vw
+		left: -80vw
+	.guy-wrap
+		margin-bottom: 26.667vw
+	.guy-left
+		position: absolute
+		left: -45vw
+		top: -5vw
+		height: 124vw
+	.guy-right
+		position: absolute
+		left: 63vw
+		top: -5vw
+		height: 124vw
+	.phones3
+		position: absolute
+		left: -2vw
+		top: -21vw
+		height: 155vw
+	.trade
+		padding-top: 20vw
+	.bid-ask-section
+		.row 
+			flex-direction: column-reverse
+	.p-desktop 
+		display: none
+	.p-mobile
+		display: block
+		padding-top: 8vw
+	.bid-ask-item__title
+		font-size: 5.600vw
+	.bid-ask-item__value
+		font-size: 7.733vw
+		span 
+			font-size: 9.467vw
+	.bid-ask-item__button
+		font-size: 5.600vw
+	.bid-ask-item
+		width: 100%
+		padding: 10vw 6vw
+	.bid-ask-item__button
+		width: 28.533vw
+		height: 12.933vw
+		margin-left: auto 
+		margin-right: auto
+		margin-top: 6.667vw
+		margin-bottom: 6.667vw
+	.bid-ask-item__text
+		font-size: 3.200vw
+	.bid-ask-item__col
+		width: 41%
+	.text-item-section__content
+		width: 100%
+	.line-row
+		overflow: hidden
+		img 
+			width: 1440px
+			left: -105vw
+			position: relative
+	.text-item-section
+		padding-top: 10vw
+	.text-item-section--pip
+		padding-bottom: 33.333vw
+	.bid-ask-item__wrapper-footer
+		display: none
+
+	.currency-item__header-text
+		display: none
+	.currency-item__header-title
+		text-align: center
+		font-size: 8.133vw
+	.currency-item__header
+		display: flex 
+		justify-content: center
+	.currency-item__title
+		font-size: 4.893vw
+	.bid-ask-item__wrapper
+		width: 100%
+	.currency-item__value
+		font-size: 6.773vw
+		span 
+			font-size: 8.284vw
+	.currency-item__value.red 
+		color: #00ad6a
+	.forexspread-sections
+		background-size: 300vw
+		background-position: bottom 480vw center
+	.ready-to-go
+		padding-bottom: 40vw
+	.spreade-wrapper .tabs .tab
+		width: 100%
+	.spreade-wrapper .tabs.active
+		height: 25vw
+	.search-inut__wrapper
+		justify-content: center
+	.search-input
+		width: 62.933vw
+		height: 11.600vw
+		padding: 0 3.200vw
+		background-size: 4.400vw
+	.button-wrapper--see-more
+		margin-top: 10.667vw
+
+			
+
+
+	
+
+		
+	
+	
 
 
 	
