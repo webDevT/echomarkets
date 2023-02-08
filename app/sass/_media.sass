@@ -1,21 +1,51 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1700px)
 
-
-
+	.main-screen__content-item
+		width: 1160px
+	.main-screen__text-wrapper,
+	.main-screen__form-wrapper
+		margin-left: 8.5vw
+	.bg-ms
+		min-width: 61.5vw 
+		max-width: 61.5vw
+		min-height: 100vh 
+		height: 100%
+		object-position: 15%
+	.main-screen .container-fluid,
+	.main-screen .main-screen__content-item
+		width: 90vw
+	.main-screen__image
+		width: 690px
+		max-width: 60vw
+		position: static
+		transform: translateY(0)
+	.main-screen
+		padding-top: 90px 
+		padding-bottom: 43px
+		padding-bottom: 0
+		
+	.main-screen__content-item
+		min-height: auto
+	.image-text__content
+		padding-left: 40px
+	.what-trade__content p
+		width: 100%
+	.what-trade__content p
+		width: 90%
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1650px)
 	/**/
-	.main-screen
-		background-size: 1070px
-		background-position: right -75px top 
-		.container-fluid 
-			//width: 1356px
 	.whyecho-two-section
 		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -30vw center / cover
 	.forexspread-sections
 		background-position: bottom 38vw center
+	
+
+
 
 @media only screen and (max-width : 1440px)
 	.image-text,
@@ -26,19 +56,16 @@
 	.forexspread-sections
 		background-size: 1440px
 		background-position: bottom 40vw center
+	.main-screen__text-wrapper,
+	.main-screen__form-wrapper
+		margin-left: 0
 	
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1600px)
-	/**/
-	.main-screen
-		background-size: 1070px
-		background-position: right -95px top 
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1550px)
 	/**/
-	.main-screen
-		background-size: 1070px
-		background-position: right -120px top 
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1450px)
 	/**/
@@ -59,6 +86,9 @@
 		left: 3vw
 		top: -1vw
 		height: 39vw
+	.bg-ms
+		max-width: 70vw 
+		min-width: 70vw
 	
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1370px)
@@ -68,6 +98,8 @@
 		background-position: right -200px top
 	.menu__item
 		padding-left: 25px 
+	.page-main-screen
+		padding-bottom: 190px
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1300px)
 	/**/
@@ -137,7 +169,7 @@
 		//display: none
 	.main-screen__form-wrapper,
 	.main-screen__text-wrapper
-		margin-left: 8vw
+		margin-left: 0vw
 	.anim
 		transition: all 1s
 		opacity: 1
@@ -158,6 +190,13 @@
 	.main-screen
 		background-size: 1070px
 		background-position: right -320px top 
+	.bg-ms
+		max-width: 80vw 
+		min-width: 80vw
+	.main-screen .container-fluid,
+	.main-screen .main-screen__content-item
+		width: 95vw
+	
 	
 
 /* Medium Devices, Desktops */
@@ -455,6 +494,18 @@
 	.tab-content::-webkit-scrollbar-thumb
 		border-radius: 10vw
 		background-color: #00ad6a
+	.main-screen__image
+		transform: translateX(5%)
+	.main-screen__title
+		font-size: 50px
+	.image-text__content
+		padding-left: 0
+	.tab__item
+		width: auto
+	
+
+
+
 	
  
 
@@ -1042,7 +1093,7 @@
 		background-position: left bottom
 	
 	.whyecho-two-section
-		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom 0vw center / 770vw no-repeat
+		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom 0vw center / 834vw no-repeat
 	.ready-to-go
 		padding-top: 0
 	.ready-to-go__item
@@ -1150,7 +1201,7 @@
 	.bid-ask-item__text
 		font-size: 3.200vw
 	.bid-ask-item__col
-		width: 41%
+		width: 45%
 	.text-item-section__content
 		width: 100%
 	.line-row
@@ -1202,8 +1253,139 @@
 		background-size: 4.400vw
 	.button-wrapper--see-more
 		margin-top: 10.667vw
+	.main-screen__image
+		transform: translateX(0%)
+		min-width: 150vw
+		left: 30vw
+	.bg-ms
+		display: none
+	.page-main-screen
+		padding-top: 28.667vw
+		.h1 
+			padding-bottom: 13.333vw
+	.main-screen__content-item .row
+		margin: 0 auto
+	.two-section
+		background-position: top -100vw center
+	.page-main-screen
+		padding-bottom: 31vw
+	.section-header
+		.h2 
+			margin-bottom: 6.1vw
+		.sub-title 
+			margin-bottom: 10.267vw
+	.page-main-screen .col-md-4
+		padding-top: 0
+	.whyecho-main-screen__item
+		margin-top: 0
+		.h3 
+			text-align: center
+			margin-bottom: 4.667vw
+		p 
+			font-size: 4.800vw
+	.page-main-screen .col-md-4
+		min-height: auto
+	.guy-img
+		margin-top: 2vw 
+		margin-bottom: 2vw
+	.whyecho-text
+		margin-top: 7vw
+		margin-bottom: 10.667vw
+	.page-main-screen
+		background: url('../img/ml.png')
+		background-size: 100vw
+		background-position: bottom center 
+		background-repeat: no-repeat
+		.sub-title 
+			max-width: 50vw 
+			margin-left: auto 
+			margin-right: auto
+		.h2 
+			margin-bottom: 6.667vw
+	.build-different 
+		.section-header .sub-title 
+			max-width: 60vw 
+			margin-left: auto 
+			margin-right: auto
+	.build-different.image-text .row
+		flex-direction: column
+	.dif-image
+		top: 0
+		width: 98vw 
+		max-width: 98vw
+		margin-left:  auto 
+		margin-right: auto
+		left: -6vw
+		margin-bottom: 13.333vw
+	.build-different
+		overflow: hidden
+		padding-bottom: 44.933vw
+	.ready-to-go-content
+		height: auto 
+		width: 100%
+	.ready-to-go__item
+		margin-bottom: 0
+		margin-top: 6.267vw
+		padding-bottom: 8.933vw
+	.ready-to-go__item-title
+		margin-bottom: 5.733vw
+	.ready-to-go__item .line
+		width: 26.400vw
+		height: 0.267vw
+		margin-top: 3.333vw
+		margin-bottom: 3.333vw
+	.form-section
+		padding-top: 18vw
+		padding-bottom: 23.867vw
+	.form-section--alternative .form-section__right
+		padding-top: 0
+	.form-section--alternative .form-section__title
+		font-size: 10.133vw
+		margin-bottom: 10.133vw
+	.form-section--alternative
+		.form-section__big-title
+			text-align: center
+			margin-bottom: 20.667vw
+		p 
+			margin-bottom: 13.333vw
+	.form-section__big-title
+		font-size: 11.5vw
+		span 
+			display: block
+	.form-section--alternative .form-section__right 
+		width: 100% 
+	.image-text
+		background: none
+	.page-main-screen .sub-title
+		max-width: 100%
+	.page-main-screen
+		.sub-title
+			br
+				display: block
+	
+	.text-item-section--pip .col-md-6:first-child
+		padding-bottom: 5.867vw
+	.bid-ask-item--pip
+		padding: 8.667vw 8vw
+		.currency-item__row
+			display: flex 
+			justify-content: space-between
+			.currency-item__col
+				width: auto
+	.currency-item__footer
+		font-size: 4.007vw
+		padding-top: 3vw
+	.text-item-section--pip
+		padding-bottom: 70vw
+	.h3
+		text-align: center
+	.home-page .image-text
+		padding-top: 0
 
-			
+
+	
+
+
 
 
 	
@@ -1253,6 +1435,8 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.text-item-section--pip
+		padding-bottom: 60vw
 
 
 /* Custom, iPhone Retina */

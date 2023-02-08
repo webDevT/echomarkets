@@ -10,7 +10,8 @@ body
     padding-left: 0 
     padding-right: 0
     max-width: 95.625vw
-    width: 1130px
+    width: 1560px
+    //width: 1130px
 a,
 a:hover 
     text-decoration: none
@@ -19,6 +20,8 @@ a:hover
     font-weight: 200
     color: #03158F
     margin-bottom: 50px
+    padding-bottom: 65px
+    border-bottom: 1px solid #e4e5e7
 .h2 
     color: $green
     font-size: 48px 
@@ -30,6 +33,8 @@ a:hover
     color: $blue
     line-height: 1.2
     margin-bottom: 20px
+p 
+    font-weight: 200
 .sub-title 
     font-size: 18px
     margin-bottom: 18px
@@ -93,8 +98,8 @@ a:hover
     border-bottom: 2px solid #f1f1f2
     z-index: 999
     .container-fluid    
-        width: 1380px 
-        max-width: 95.625vw
+        width: 95.536vw
+        max-width: 2060px
         display: flex
         justify-content: space-between
         align-items: center
@@ -115,6 +120,7 @@ a:hover
     display: flex 
     align-items: center
 .menu 
+    padding-left: 5%
     ul 
         padding: 0 
         margin: 0 
@@ -132,15 +138,7 @@ a:hover
     display: flex
     align-items: center
     text-transform: uppercase
-.menu__item--sub .menu__link:after 
-    content: ''
-    width: 12px 
-    height: 8px 
-    background: url('../img/rellower.svg')
-    background-size: 100%
-    background-repeat: no-repeat 
-    background-position: center
-    margin-left: 5px
+
 .menu__link:hover
     color: #00E78E
 
@@ -151,7 +149,7 @@ a:hover
     z-index: 999
 .header__button
     background: $green
-    height: 48px
+    height: 42px
     display: flex 
     justify-content: center 
     align-items: center
@@ -167,7 +165,8 @@ a:hover
     color: #03158f
     font-weight: 500
 .header__right-link:hover 
-    color: #03158f
+    color: #00e78e
+
 .logo-white 
     display: none
     transition: all 0.5s
@@ -259,30 +258,63 @@ a:hover
     color: #fff 
     display: block
     margin-bottom: 26px
+    transition: all 0.3s
 .mega-menu__link:hover 
     color: #fff
+    font-weight: 700
 //end mega menu style
 
 //start main screen style
 .main-screen 
     position: relative
     z-index: 1
-    padding-top: 80px
-    background: url('../img/bg.png')
-    background-repeat: no-repeat
-    background-position: top right
-    background-size: 63vw
+    padding-top: 6.853vw
+    display: flex 
+    align-items: center
+    
+    // background: url('../img/bg.png')
+    // background-repeat: no-repeat
+    // background-position: top right
+    // //background-size: 64.196vw
+    // background-size: auto 100vh
     padding-bottom: 8vw
+    //height: 48.214vw
+    min-height: 100vh
+    .container-fluid 
+        position: relative
+
 
 .main-screen__content
-    width: 100% 
+  //  min-height: 50vw
     //display: flex 
     justify-content: space-between
+.main-screen__content-item
+    .col-md-6 
+       // position: relative
 .main-screen__image
-    width: 670px
-    position: relative
-    top: 1vw
- 
+    position: absolute
+    width: 49vw
+    max-width: 918px
+    //min-width: 88vh
+    ///max-width: 49vw
+    top: 50%
+    right: 0vw
+    transform: translateY(-40%)
+.main-screen__content-item
+    width: 1560px
+    margin-left: auto
+    margin-right: auto
+.main-screen__content-item
+    min-height: 42vw
+.bg-ms
+    position: absolute 
+    top: 0 
+    right: 0
+    min-height: 100vh 
+    max-width: 64.196vw
+    min-width: 64.196vw
+    object-fit: cover
+    //object-position: left top
 
 
 
@@ -303,7 +335,7 @@ a:hover
     margin-bottom: 30px
     span 
         display: block
-        color: #8AEB85
+        color: #00e78e
         font-weight: 700
 .main-screen__text
     font-size: 20px
@@ -345,11 +377,11 @@ a:hover
 .main-screen__link:hover
     color: #00ad6a
 .main-screen__content
-    position: relative
+   // position: relative
 .slider-arrows 
     position: absolute
-    right: 153px
-    bottom: 28px
+    right: 15.179vw
+    bottom: 2.679vw
     display: flex 
     align-items: center
 .next,
@@ -851,7 +883,7 @@ select::-ms-expand
     padding-top: 17px
     font-weight: 300
 .form-footer__link
-    color: $green
+    color: #00e78e
     text-decoration: underline  
     font-weight: 700
 
@@ -1003,8 +1035,8 @@ select::-ms-expand
 
 //start whyecho main screen
 .page-main-screen
-    padding-top: 130px
-    padding-bottom: 150px
+    padding-top: 125px
+    padding-bottom: 13vw
     background: url('../img/trendline2.png')
     background-position: bottom center
     background-size: 100%
@@ -1034,6 +1066,7 @@ select::-ms-expand
     font-size: 26px
     margin-top: 20px
     margin-bottom: 30px
+    font-weight: 300
 //end why echo main screen 
 
 //start ready to go 
@@ -1090,6 +1123,7 @@ select::-ms-expand
     font-weight: 800 
     color: #A6A9BF
     margin-right: 40px
+    font-size: 25px
 .ready-to-go__item
     margin-left: auto 
     margin-right: auto
@@ -1140,7 +1174,7 @@ select::-ms-expand
     width: 440px 
     max-width: 100%
     box-shadow: 0px 0px 20px 0px rgba(236, 236, 241, 1)
-    padding: 47px 38px 38px 38px
+    padding: 47px 33px 38px 33px
     background: #fff
 .bid-ask-item
     display: flex
@@ -1209,7 +1243,7 @@ select::-ms-expand
     span 
         font-size: 40.79px
 .currency-item__footer
-    padding-top: 18px
+    padding-top: 15px
     font-size: 19.73px
     color: #A6A9BF
     font-weight: 600
@@ -1337,7 +1371,144 @@ thead
     color: #00E78E  
 .button-wrapper--see-more
     justify-content: center
-    margin-top: 45px   
+    margin-top: 45px  
+.slider-item
+    position: relative 
+.main-screen
+    padding-top: 0
+.main-screen__content-item
+    min-height: 100vh
+    display: flex
+    align-items: center
+    .row 
+        width: 100%
+.main-screen__text-wrapper,
+.main-screen__form-wrapper
+    margin-left: 2.5vw
+.page-main-screen
+    
+    .sub-title
+        font-weight: 400
+.section-header
+    text-align: center
+    .h2 
+        margin-bottom: 3px
+.ready-to-go-content
+    width: 325px 
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    height: 484px
+    display: flex
+    flex-direction: column 
+    justify-content: center
+    p 
+        margin-bottom: 0
+        font-weight: 200
+    .sub-title 
+        font-weight: 500
+.form-section--alternative
+    padding-top: 100px 
+    padding-bottom: 111px
+    .container-fluid 
+        width: 1023px 
+        
+    .form-section__title
+        font-size: 48px
+        margin-bottom: 30px
+    p 
+        font-weight: 200
+        margin-bottom: 30px
+    .form-footer__text
+        color: #424659
+    .form-footer__link a
+        color: #00e78e
+    .form-sub-title
+        color: #424659
+.blue-bg
+    background: $blue
+    color: $green-text
+.blue-bg:hover 
+    color: $green-text
+.green-button
+    background: #00e78e
+    color: $blue
+.green-button:hover 
+    color: $blue
+.blue-text 
+    color: $blue
+.green-text 
+    color: #00ad6a
+.text-item-section
+    .row
+        width: 1040px 
+        margin-left: auto 
+        margin-right: auto
+        max-width: 100%
+.bid-ask-item--pip
+    padding: 35px 47px 35px 47px 
+    .currency-item__header
+        margin-bottom: 15px
+    .currency-item__value
+        line-height: 1
+.text-item-section--pip
+    .col-md-6:first-child 
+        padding-bottom: 43px
+    .col-md-6 
+        height: auto
+        display: flex 
+        align-items: center
+.ready-to-go
+    .row 
+        width: 1140px 
+        margin-left: auto 
+        margin-right: auto
+        max-width: 100%
+.page-main-screen--no-line
+    padding-bottom: 110px
+.ready-to-go__item-title
+    color: #424659
+.page-main-screen
+    .sub-title
+        br 
+            display: none
+.main-screen .slick-list 
+    overflow-y: visible
+
+/* Menu - padding was breaking menu in safari, change to margin */
+.menu
+    margin-left: 5%
+    padding-left:0
+.container-fluid
+    width: 1160px
+
+.main-screen .container-fluid
+    width: 1560px
+/* Home page spacing beneath Hero section */
+
+.home-page .image-text
+    padding-top: 100px
+.home-page .image-text.partner
+    padding-top: 175px
+.home-page .main-screen
+    padding-bottom: 4vw
+/* login link on Form Section site wide */
+.form-section .form-footer__link a
+    color:#00e78e
+/* Forex Spreads From Sections */
+.forex-spreads .form-section
+    background: url("../img/steps3-bg.png")
+    background-size: cover
+/* Forex Spreads Button Size */
+.ready-to-go__footer a.button
+    height: 49px
+    padding: 0 29px
+.image-text__image-wrapper
+    margin-right: 60px
+.forex-spreads
+    .ready-to-go 
+        .h2 
+            letter-spacing: -2px
 @import "media"
 
 
