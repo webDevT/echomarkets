@@ -73,7 +73,12 @@ $('.footer-menu__title').click(function(){
     $(this).parent().toggleClass('active');
 
 })
-
-
 //end tab
+
+//faq
+$('.faq__item').click(function(){
+    $(this).toggleClass('active');
+    $(this).find('p').slideToggle();
+})
+//faq
 

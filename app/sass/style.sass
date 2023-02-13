@@ -33,6 +33,11 @@ a:hover
     color: $blue
     line-height: 1.2
     margin-bottom: 20px
+.h4 
+    font-size: 26px
+    color: $blue
+    font-weight: 700
+    margin-bottom: 0
 p 
     font-weight: 200
 .sub-title 
@@ -62,6 +67,8 @@ p
     background: #00AD6A
 .button--green:hover 
     color: $blue
+.button--green-white:hover 
+    color: #fff
 .button-wrapper 
     display: flex 
     justify-content: flex-start
@@ -72,6 +79,11 @@ p
 .main-screen-form__button:hover
     transform: scale(1.05)
     -webkit-font-smoothing: antialiased
+.wrapper 
+    width: 964px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
 .tools-slider__list-item
     color: $green
     font-weight: 300
@@ -785,6 +797,7 @@ p
     font-size: 25.92px
     font-weight: 700
     width: 59px 
+    min-width: 59px
     height: 59px
 .step-circle-wrapper
     
@@ -1061,14 +1074,13 @@ select::-ms-expand
         font-weight: 200 
         font-size: 18px
 .whyecho-main-screen__item
-    margin-left: 50px
+    margin-left: 60px
 .whyecho-text
     font-size: 26px
     margin-top: 20px
     margin-bottom: 30px
     font-weight: 300
 //end why echo main screen 
-
 //start ready to go 
 
 //end ready to go 
@@ -1473,7 +1485,7 @@ thead
         br 
             display: none
 .main-screen .slick-list 
-    overflow-y: visible
+    min-height: 48vw
 
 /* Menu - padding was breaking menu in safari, change to margin */
 .menu
@@ -1496,19 +1508,296 @@ thead
 .form-section .form-footer__link a
     color:#00e78e
 /* Forex Spreads From Sections */
-.forex-spreads .form-section
+.forex-spreads .form-section,
+.mt4 .form-section
     background: url("../img/steps3-bg.png")
     background-size: cover
 /* Forex Spreads Button Size */
 .ready-to-go__footer a.button
     height: 49px
     padding: 0 29px
-.image-text__image-wrapper
-    margin-right: 60px
+
 .forex-spreads
     .ready-to-go 
         .h2 
             letter-spacing: -2px
+.build-different
+    .container-fluid 
+        width: 964px
+    .col-lg-8
+        display: flex
+        justify-content: flex-end
+    .dif-image 
+        position: relative
+        left: 40px
+    .image-text__content
+        min-width: 345px
+
+//start copy tading style
+.copy-trading,
+.mt4 
+    padding-top: 125px
+    .h1 
+        margin-bottom: 0px
+.copy-trading-main-screen
+    min-height: 71.181vw
+    background: url('../img/ct.png')
+    background-size: 100% 
+    background-position: top center
+    background-repeat: no-repeat
+    padding-top: 25px
+    position: relative
+.copy-trading-main-screen__content
+    width: 380px 
+    margin-left: auto 
+    margin-right: auto
+    padding-top: 35px   
+    p 
+        margin-bottom: 30px
+    .button-wrapper
+        justify-content: center
+        margin-top: 38px
+.copy-trading-main-screen__content-sub
+    font-weight: 500
+    font-size: 18px 
+.ct-man1,
+.ct-man2
+    position: absolute
+.ct-man1
+    top: 177px
+    left: 0
+    width: 40.486vw
+    max-width: 777px
+.ct-man2
+    top: 176px
+    right: 0
+    width: 40.486vw
+    max-width: 777px
+//end copy trading style
+
+//start
+.two-col--question-section
+    padding-bottom: 180px
+    .wrapper 
+        margin-top: -15vw
+        //margin-top: -176px
+.two-col
+    .h2 
+        margin-bottom: 55px
+.two-col__image
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+.two-col__item
+    width: 435px 
+    max-width: 100%
+    .h3 
+        margin-bottom: 17px
+    .cub-title 
+        margin-bottom: 35px
+    .button-wrapper
+        margin-top: 40px
+        display: flex 
+        justify-content: center
+.two-col__image-wrapper
+    min-height: 250px
+    display: flex 
+    justify-content: center 
+    align-items: flex-end
+    margin-bottom: 24px
+.two-col
+    .col-md-6:nth-child(2)
+        display: flex 
+        justify-content: flex-end
+.form-section--copy-trading
+    background: url('../img/ctf.png')
+    background-size: cover 
+    background-position: center
+    padding-top: 96px
+    padding-bottom: 100px
+    .form-section__right
+        margin-top: 0 
+        justify-content: flex-start
+        padding-top: 20px
+    .step-item:nth-child(3) .step-circle:after 
+        display: block
+    .step-item:nth-child(4) .step-circle:after 
+        display: none
+    .step-item__content
+        width: 360px 
+        max-width: 100%
+        padding-top: 12px
+    .step-circle:after
+        height: 62px
+    .step-item
+        margin-bottom: 0px
+        min-height: 120px
+        align-items: flex-start
+    .button-wrapper
+        padding-top: 15px
+        padding-left: 80px
+.partner-program
+    padding-top: 160px 
+    padding-bottom: 16vw
+    background-color: #eafaf4
+    background-image: url('../img/pp.png')
+    background-size: 100% 
+    background-position: top 100px center
+    background-repeat: no-repeat
+.partner-program__content
+    background: #00e78e
+    padding: 36px 43px
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    margin-top: 36px
+    .h3 
+        margin-bottom: 5px
+    .button 
+        white-space: nowrap
+        margin-left: 50px
+
+
+//start cta style
+.cta 
+    background: #03158f
+    padding-top: 83px 
+    padding-bottom: 83px
+    .wrapper-866
+        display: flex 
+        align-items: center
+        justify-content: space-between
+.cta__text
+    font-size: 25px 
+    font-weight: 800
+    color: #a6a9bf
+//end cta style
+.wrapper-866 
+    width: 866px 
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+
+//start faq style
+.faq 
+    padding-top: 152px 
+    padding-bottom: 152px
+.faq__wrapper
+    padding-top: 40px
+.faq__item
+    box-shadow: 0px 0px 20px 0px rgba(236, 236, 241, 1)
+    padding: 39px 37px 39px 45px
+    cursor: pointer
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 9px
+    p 
+        margin-bottom: 0
+        font-size: 18px
+        display: none
+.plus
+    width: 12px 
+    min-width: 12px
+    height: 12px 
+    position: relative
+    margin-left: 50px
+.minus-row
+    width: 12px
+    height: 2px
+    background: #48bb87
+    top: 50% 
+    left: 0 
+    transform: translateY(-50%)
+    position: absolute
+.plus-row
+    width: 2px 
+    height: 12px
+    background: #48bb87
+    position: absolute 
+    top: 0 
+    left: 50% 
+    transform: translateX(-50%)
+.faq__item-title
+    font-size: 22px 
+    font-weight: 500
+.faq__item.active 
+    .plus-row 
+        display: none
+//end faq style 
+
+//start mt4 style
+.mt4-main-screen
+    .button-wrapper
+        margin-top: 30px
+    .sub-title 
+        width: 770px 
+        max-width: 100%
+        margin-left: auto 
+        margin-right: auto
+        margin-bottom: 76px
+.two-col--acces
+    padding-bottom: 43px
+    .col-md-6:nth-child(2)
+        display: block
+    .h2 
+        margin-bottom: 10px
+    .tabs
+        position: relative
+        z-index: 99
+        width: 800px 
+        max-width: 100%
+        margin-top: 154px
+        margin-bottom: 68px
+        padding-left: 0
+        padding-right: 0
+        .tab 
+            width: 25%
+    .tab:first-child:before 
+        content: url('../img/win.png')
+        top: -24px
+        position: absolute
+        transform: translateY(-100%)
+    .tab:nth-child(2):before 
+        content: url('../img/mac.png')
+        top: -24px
+        position: absolute
+        transform: translateY(-100%)
+    .tab:nth-child(3):before 
+        content: url('../img/mobile.png')
+        top: -24px
+        position: absolute
+        transform: translateY(-100%)
+    .tab:nth-child(4):before 
+        content: url('../img/web.png')
+        top: -24px
+        position: absolute
+        transform: translateY(-100%)
+    .section-footer-buttons
+        margin-top: 53px
+        .button 
+            width: 140px
+.tools-slider__list-item .medium
+    font-weight: 500
+.acces-item
+    width: 444px 
+    max-width: 100%
+.image-text--mt4
+    padding-top: 20px
+    .image-text__content
+        padding-left: 0
+        padding-top: 30px 
+        
+    .col-md-6:nth-child(2)
+        display: flex 
+        justify-content: flex-end
+.item-mt4
+    .sub-title 
+        width: 435px 
+        max-width: 100%
+        margin-bottom: 25px
+//end mt4 style
+
 @import "media"
 
 
