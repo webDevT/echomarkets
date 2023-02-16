@@ -1,5 +1,9 @@
 @import "vars"
 
+
+@media only screen and (max-width : 1900px)
+	.forex-trading-sections-wrapper
+		background-position: bottom 38vw center
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1700px)
@@ -38,6 +42,10 @@
 		width: 100%
 	.what-trade__content p
 		width: 90%
+	.forex-trading-sections  
+		background-position: top 18vw center
+	.forex-trading-sections-wrapper
+		background-position: bottom 40vw center
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1650px)
 	/**/
@@ -45,11 +53,19 @@
 		background: url('../img/dif-bg.png') no-repeat, url('../img/bg-tool.png') bottom -30vw center / cover
 	.forexspread-sections
 		background-position: bottom 38vw center
+	.forex-trading-sections  
+		background-position: top 20vw center
+	.forex-trading-sections-wrapper
+		background-position: bottom 44vw center
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1580px)
 	/**/
 	.partner-program
 		padding-bottom: 183px	
+	.forex-trading-sections  
+		background-position: top 23vw center
+	.forex-trading-sections-wrapper
+		background-position: bottom 47vw center
 	
 
 
@@ -68,6 +84,15 @@
 		margin-left: 0
 	.partner-program
 		background-size: 1440px
+	.forex-trading-sections  
+		background-size: 1440px
+		background-position: top 350px center
+	.want-more
+		padding-top: 230px
+	.forex-trading-sections-wrapper
+		background-size: 1440px
+		background-position: bottom 750px center
+
 	
 
 
@@ -208,6 +233,9 @@
 	.main-screen .container-fluid,
 	.main-screen .main-screen__content-item
 		width: 95vw
+	.what-fr
+		img 
+			margin-left: 0
 	
 	
 
@@ -544,6 +572,17 @@
 			text-align: center
 			.button-wrapper 
 				margin-top: 20px
+	.want-more
+		.image-text__content
+			padding-left: 0
+	.text-item-section--ft .currency-item__col
+		padding-left: 0
+	.text-item-section--ft .bid-ask-item--pip
+		padding-left: 25px 
+		padding-right: 25px
+	.forex-trading-sections-wrapper
+		background-size: 1440px
+		background-position: bottom 680px center
 	
 	
 
@@ -1457,7 +1496,8 @@
 	.copy-trading-main-screen__content .button-wrapper 
 		margin-top: 11.333vw
 	.copy-trading,
-	.mt4
+	.mt4,
+	.forex-trading
 		padding-top: 28.933vw
 		.h1 
 			padding-bottom: 9.333vw
@@ -1556,11 +1596,23 @@
 	.two-col--acces
 		.wrapper 
 			margin-top: 0
+	.mt4 
+		.h1 
+			width: 91vw
 	.mt4-main-screen 
-		padding-bottom: 0
-		background-size: cover 
-		background-position: bottom -70vw center
-		padding-bottom: 55vw
+		// padding-bottom: 0
+		// background-size: cover 
+		background-position: bottom -52vw center
+		padding-bottom: 35vw
+		.row 
+			display: flex 
+			flex-direction: column-reverse
+			img 
+				margin-top: 16.800vw
+				width: 135vw
+				max-width: 140vw
+				margin-left: -45vw
+		
 		img 
 			margin-left: auto 
 			margin-right: auto 
@@ -1594,10 +1646,163 @@
 		margin-bottom: 1vw
 	.line-row2
 		img 
-			width: 250vw 
-			left: 0
+			width: 320vw 
+			left: -130vw
 	.home-page .image-text.partner 
 		padding-top: 0
+	.mt4 .section-footer-buttons
+		flex-direction: row
+		.button 
+			margin-bottom: 0
+			width: 37.467vw	
+			padding-left: 0 
+			padding-right: 0
+	.image-text--mt4
+		padding-top: 0
+		padding-bottom: 28vw
+		.row 
+			flex-direction: column
+			display: flex
+			img 
+				margin-top: 10vw
+		.h2 
+			text-align: left
+	.two-col--acces
+		.sub-title 
+			text-align: left
+	.forex-trading .spreade-wrapper .tabs 
+		margin-top: 10.667vw
+	.check-spreads 
+		padding-bottom: 39.333vw
+	.forex-trading-main-screen__content 
+		width: 100%
+		.sub-title 
+			text-align: left
+	.forex-trading-main-screen 
+		padding-top: 8vw
+		.h2 
+			br 
+				display: none
+		.row 
+			display: flex 
+			flex-direction: column-reverse
+			padding-top: 0
+	.maney-img 
+		width: 100%
+		margin-bottom: 10.667vw
+	.gray-link 
+		text-align: center
+		font-size: 4.8vw
+		margin-top: 7.733vw
+	.forex-trading-main-screen .section-footer-buttons 
+		padding-top: 10.133vw
+	.forex-trading-sections  
+		background-size: 300vw
+		background-position: top 185vw center
+	.want-more 
+		padding-top: 120vw
+		position: relative
+		padding-bottom: 10vw
+
+		.h2 
+			position: absolute 
+			top: 39vw
+			left: 50% 
+			width: 85%
+			transform: translateX(-50%)
+		.row 
+			display: block 
+			flex-direction: column-reverse
+	.h2 
+		br 
+			display: none
+	.ph-img
+		width: 68vw
+	.want-more .statistic 
+		top: 54vw
+	.what-fr
+		padding-top: 39vw
+		position: relative
+		padding-bottom: 0vw
+		.h2 
+			position: absolute 
+			top: 0 
+			left: 50% 
+			transform: translateX(-50%)
+			width: 100%
+		img 
+			width: 100%
+			margin-bottom: 6vw
+	.what-fr .image-text__content p
+		width: 100%
+	.text-item-section--ft
+		.row 
+			flex-direction: column-reverse
+	.text-item-section--ft .bid-ask-item--pip
+		margin-top: 10vw
+		padding: 6.667vw 10.667vw 8.800vw 10.667vw
+		.currency-item__header-text
+			display: block
+	.text-item-section--ft
+		padding-bottom: 40vw
+	.text-item-section--ft,
+	.what-fr 
+		.col-md-6 
+			padding-left: 0 
+			padding-right: 0
+	.text-item-section--ft .currency-item__header-title 
+		font-size: 6.9vw
+		padding-left: 6.667vw
+		padding-right: 6.667vw
+	.text-item-section--ft .bid-ask-item--pip .currency-item__header-text
+		font-size: 3.267vw
+	.text-item-section--ft .currency-item__title 
+		font-size: 3.867vw
+	.text-item-section--ft .currency-item__value
+		font-size: 5.361vw
+		span 
+			font-size: 6.553vw
+	.text-item-section--ft .bid-ask-item--pip .currency-item__row .currency-item__col
+		width: 24vw
+	.ft-item-button 
+		width: 19.467vw
+		height: 9.333vw
+		font-size: 3.872vw
+	.text-item-section--ft .currency-item__row 
+		margin-bottom: 4vw
+	.ft-item-buttons 
+		width: 48.667vw
+	.forex-trading-sections-wrapper
+		background-size: 300vw
+		background-position: bottom 680px center
+	.text-item-section--ft
+		padding-bottom: 0
+	.forex-trading .build-different
+		padding-top: 41.6vw
+		padding-bottom: 34vw
+	.forex-trading-sections-wrapper
+		background-position: bottom 300vw center
+	.example-item 
+		width: 100%
+		margin-bottom: 10.667vw
+		.h4 
+			text-align: center
+			margin-bottom: 6.667vw
+	.exampels
+		padding-top: 21.333vw
+		padding-bottom: 21.333vw
+		margin-bottom: 34vw
+		.h2 
+			margin-bottom: 3.5vw
+		.sub-title 
+			margin-bottom: 11.067vw
+	.example-item .text-13
+		font-size: 3.467vw
+		margin-top: 6.667vw
+
+
+
+
 	
 			
 
@@ -1673,6 +1878,11 @@
 	/**/
 	.text-item-section--pip
 		padding-bottom: 60vw
+	.text-item-section--ft
+		padding-bottom: 0
+	.forex-trading-sections-wrapper
+		background-position: bottom 313vw center
+
 
 
 /* Custom, iPhone Retina */

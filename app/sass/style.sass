@@ -27,6 +27,10 @@ a:hover
     font-size: 48px 
     font-weight: 700
     margin-bottom: 18px
+    span 
+        font-weight: 200
+        display: block 
+        color: $blue
 .h3 
     font-size: 26px 
     font-weight: 700 
@@ -583,11 +587,13 @@ p
     span 
         font-size: 19.32px
         line-height: 0.9
-.red
+.red,
+.red:hover
     color: #D12E36
 .blue
     color: $blue
-.green 
+.green,
+.green:hover 
     color: #00AD6A
 .tab-slider__button
     width: 58px 
@@ -1509,7 +1515,8 @@ thead
     color:#00e78e
 /* Forex Spreads From Sections */
 .forex-spreads .form-section,
-.mt4 .form-section
+.mt4 .form-section,
+.forex-trading .form-section
     background: url("../img/steps3-bg.png")
     background-size: cover
 /* Forex Spreads Button Size */
@@ -1535,7 +1542,8 @@ thead
 
 //start copy tading style
 .copy-trading,
-.mt4 
+.mt4,
+.forex-trading 
     padding-top: 125px
     .h1 
         margin-bottom: 0px
@@ -1797,6 +1805,138 @@ thead
         max-width: 100%
         margin-bottom: 25px
 //end mt4 style
+
+//start forex trading style
+.forex-trading
+    .spreade-wrapper
+        .tabs 
+            margin-top: 70px
+    .forex-table tbody tr td:nth-child(3),
+    .forex-table tbody tr td:nth-child(4)
+        color: #03158f
+    .forex-table tbody tr td:nth-child(5),
+    .forex-table tbody tr td:nth-child(6)
+        color: #48bb87
+.check-spreads
+    padding-bottom: 170px
+
+.forex-trading-main-screen 
+    padding-top: 39px
+    .row 
+        padding-top: 50px
+.gray-link
+    color: #a6a9bf
+    font-weight: 800 
+    font-size: 18px
+    display: block 
+    margin-top: 30px
+.gray-link:hover 
+    color: #a6a9bf
+.forex-trading-main-screen__content 
+    width: 440px 
+    max-width: 100%
+.maney-img 
+    width: 427px 
+    max-width: 100% 
+.forex-trading-main-screen
+    .col-md-6:nth-child(2)
+        display: flex 
+        justify-content: flex-end
+        align-items: center
+    .section-footer-buttons 
+        padding-top: 45px
+.forex-trading-sections 
+    background: url('../img/bg-ft.png')
+    background-size: 100%
+    background-position: top 15vw center
+    background-repeat: no-repeat
+.want-more
+    padding-top: 16vw
+    padding-bottom: 0
+    .image-text__content
+        padding-left: 30px
+    .button-wrapper 
+        margin-top: 30px
+    .statistic 
+        top: 255px
+.ph-img
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+.what-fr
+    padding-top: 125px
+    img 
+        display: block 
+        margin-left: 50px
+    .image-text__content
+        p
+            width: 450px
+.text-item-section--ft
+    .currency-item__header-title
+        font-size: 34px
+    .currency-item__title 
+        font-size: 18.96px
+    .currency-item__value 
+        font-size: 26.5px
+        span 
+            font-size: 32px
+    .currency-item__row
+        margin-bottom: 17px
+    .currency-item__col
+        width: 40%
+        padding-left: 18px
+    .bid-ask-item--pip
+        padding-bottom: 44px
+    .col-md-6:first-child
+        padding-bottom: 0
+
+.ft-item-buttons
+    width: 238px 
+    margin-left: auto 
+    margin-right: auto
+    display: flex 
+    justify-content: space-between
+.ft-item-button
+    width: 98px 
+    height: 45px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    border: 1px solid #f0f0f4
+    font-size: 18.96px 
+    font-weight: 500
+.forex-trading .build-different
+    padding-bottom: 195px
+    padding-top: 238px
+.forex-trading-sections-wrapper 
+    background: url('../img/bottom-bg.png')
+    background-position: bottom 34vw center
+    background-repeat: no-repeat
+    background-size: 100%
+
+.exampels
+    background: #f6f6f8
+    padding-top: 90px 
+    padding-bottom: 110px
+    margin-bottom: 149px
+    .row 
+        margin-top: 45px
+.example-item
+    width: 330px 
+    max-width: 100%
+    .h4 
+        margin-bottom: 24px
+    p 
+        margin-bottom: 0 
+        span 
+            font-weight: 500
+    .text-13
+        margin-top: 30px
+.text-13
+    font-size: 13px 
+    font-weight: 300 
+    color: #a6a9bf
+//end forex-trading style
 
 @import "media"
 
