@@ -413,7 +413,8 @@
 		.menu__link
 			.menu-arrow
 				transform: rotate(90deg)
-	.tab
+	.tab,
+	.tab2
 		min-width: 80px
 	.tab-prev,
 	.tab-next 
@@ -583,6 +584,9 @@
 	.forex-trading-sections-wrapper
 		background-size: 1440px
 		background-position: bottom 680px center
+	.faq-page .tab-content
+		width: 100%
+		overflow: visible
 	
 	
 
@@ -803,7 +807,8 @@
 		width: 100%
 	// .tab
 	// 	display: none
-	.tab:first-child 
+	.tab:first-child,
+	.tab2:first-child 
 		display: block
 	.image-text
 		padding-bottom: 0
@@ -828,7 +833,8 @@
 			display: flex 
 			justify-content: center
 			margin-bottom: 18.667vw
-	.tab 
+	.tab,
+	.tab2 
 		width: 100%
 		background: #f6f6f8
 	.tabs 
@@ -836,23 +842,31 @@
 		z-index: 99
 		position: relative
 		overflow: hidden
-		.tab:nth-child(1)
+		.tab:nth-child(1),
+		.tab2:nth-child(1)
 			order: 5 
 			display: flex
-		.tab:nth-child(2)
+		.tab:nth-child(2),
+		.tab2:nth-child(2)
 			order: 2
-		.tab:nth-child(3)
+		.tab:nth-child(3),
+		.tab2:nth-child(3)
 			order: 3
-		.tab:nth-child(4)
+		.tab:nth-child(4),
+		.tab2:nth-child(4)
 			order: 4
-		.tab:nth-child(5)
+		.tab:nth-child(5),
+		.tab2:nth-child(5)
 			order: 5
-		.tab.active 
+		.tab.active,
+		.tab2.active  
 			order: 1
-		.tab.active:first-child 
+		.tab.active:first-child,
+		.tab2.active:first-child  
 			order: 1
 			display: flex
-	.tab.active 
+	.tab.active,
+	.tab2.active 
 		background: #f6f6f8
 
 	.tabs.active 
@@ -865,16 +879,19 @@
 	// 	order: 5
 	// .tab.active:first-child 
 	// 	order: 1
-	.tab
+	.tab,
+	.tab2
 		z-index: 999 
 		position: relative
 		min-height: 11.333vw
 		color: #a6a9bf
 		font-size: 4.267vw
-	.tab.active 
+	.tab.active,
+	.tab2.active  
 		color: #a6a9bf
 		font-weight: 700
-	.tab.active:after 
+	.tab.active:after,
+	.tab2.active:after 
 		content: ''
 		width: 3vw
 		height: 1.867vw
@@ -1322,7 +1339,8 @@
 		background-position: bottom 480vw center
 	.ready-to-go
 		padding-bottom: 40vw
-	.spreade-wrapper .tabs .tab
+	.spreade-wrapper .tabs .tab,
+	.spreade-wrapper .tabs .tab2
 		width: 100%
 	.spreade-wrapper .tabs.active
 		height: 25vw
@@ -1497,7 +1515,8 @@
 		margin-top: 11.333vw
 	.copy-trading,
 	.mt4,
-	.forex-trading
+	.forex-trading,
+	.page
 		padding-top: 28.933vw
 		.h1 
 			padding-bottom: 9.333vw
@@ -1622,9 +1641,11 @@
 	.two-col--acces 
 		.tabs
 			margin-top: 0
-			.tab 
+			.tab,
+			.tab2 
 				width: 100%
-			.tab:before 
+			.tab:before,
+			.tab2:before  
 				display: none
 	.acces-item 
 		width: 100%
@@ -1799,6 +1820,8 @@
 	.example-item .text-13
 		font-size: 3.467vw
 		margin-top: 6.667vw
+	.faq-page .tabs2
+		margin-top: 5vw
 
 
 

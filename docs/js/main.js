@@ -67,7 +67,9 @@ if($(window).width() < 992) {
 $('.tab').click(function(){
     $('.tabs').toggleClass('active');
 })
-
+$('.tab2').click(function(){
+    $('.tabs').toggleClass('active');
+})
 $('.footer-menu__title').click(function(){
     $(this).parent().find('.footer-menu__item-content').slideToggle();
     $(this).parent().toggleClass('active');
