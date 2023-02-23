@@ -530,9 +530,11 @@ p
     background: $blue
     color: $green
     font-weight: 700
-.tab__item 
+.tab__item,
+.tab__item2
     display: none
-.tab__item:first-child 
+.tab__item:first-child,
+.tab__item2:first-child  
     display: block
 .tab-slider-wrapper 
     position: relative
@@ -1521,7 +1523,10 @@ thead
 .forex-spreads .form-section,
 .mt4 .form-section,
 .forex-trading .form-section,
-.withdravals-page .form-section
+.withdravals-page .form-section,
+.foundaccount-page .form-section,
+.calculator-page .form-section,
+.page .form-section  
     background: url("../img/steps3-bg.png")
     background-size: cover
 /* Forex Spreads Button Size */
@@ -2037,9 +2042,389 @@ thead
     transition: all 0.3s
 .withdravals-item:hover 
     transform: scale(1.02)
+
 //end withdravals
 
+//found account
+.foundaccount-page
+    .withdravals-item
+        .button 
+            width: 101px
+            padding-left: 0 
+            padding-right: 0
+.see-more 
+    display: none
+//end foundaccount
+.what-fr
+    padding-bottom: 20px
 
+.calculator-page
+    .faq 
+        padding-bottom: 200px
+.calculator-sections
+    padding-top: 42.5px
+.calculator
+    .row 
+        padding-top: 130px
+.sub-title--light
+    font-weight: 300
+.type-forex__item
+    margin-bottom: 20px
+.calculator-wrapper
+    width: 437px 
+    max-width: 100%
+    padding: 38px 25px 45px 25px
+    box-shadow: 0px 0px 20px 0px rgba(66, 70, 89, 0.1)
+    background: #fff
+    box-shadow: 0px 20px 48.399px 2.6009999999999995px rgba(0, 173, 106, 0.33)
+    border-radius: 50px
+    padding: 12px
+.calculator-wrapper-content
+    background: #f6f6f8
+    border-radius: 50px
+.calculator
+    .col-md-6:last-child 
+        display: flex 
+        justify-content: flex-end
+    .col-md-6:first-child 
+        display: flex
+        flex-direction: column
+        justify-content: center
+.calculator__tabs 
+    height: 41px
+    width: 334px
+    margin-left: auto 
+    margin-right: auto
+.calculator__tab
+    width: 100%
+    background: #f6f6f8
+    min-height: 41px
+    display: flex
+    align-items: center 
+    justify-content: center
+    color: #a6a9bf
+    font-weight: 700
+    
+.calculator__tabs
+    flex-direction: column
+    z-index: 99
+    position: relative
+    overflow: hidden
+    display: flex
+.calculator__tab
+    height: 41px
+    cursor: pointer
+.calculator__tab:nth-child(1)
+    order: 5
+    display: flex
+.calculator__tab:nth-child(2)
+    order: 2
+.calculator__tab:nth-child(3)
+    order: 3
+.calculator__tab:nth-child(4)
+    order: 4
+.calculator__tab:nth-child(5)
+    order: 5
+.calculator__tab.active
+    order: 1
+// .calculator__tab.active:first-child
+//     order: 1
+//     display: flex
+.calculator__tab.active
+    background: #f6f6f8
+.calculator__tabs.active
+    overflow: visible
+    .calculator__tab
+        z-index: 999
+        position: relative
+        min-height: 41px
+        color: #a6a9bf
+    .calculator__tab.active
+        color: #a6a9bf
+        font-weight: 700
+.calculator__tab.active:after
+    content: ''
+    width: 9px
+    height: 6px
+    background: url('../img/down.svg')
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    margin-left: 6px
+.calculator__tab-item
+    display: none
+.calculator__tab-item:first-child 
+    display: block
+.calculator-row
+    display: flex 
+    justify-content: space-between
+    margin-bottom: 12px
+    .select,
+    .input 
+        margin-bottom: 0
+        color: #424659 
+    .select 
+        color: #424659
+        font-weight: 500
+    .input 
+        font-weight: 500
+    
+    .input-wrapper
+        width: 46%
+.input-label
+    font-size: 14px 
+    color: #a6a9bf
+    margin-bottom: 8px
+.profit-value
+    text-align: center
+    margin-top: 40px
+    font-size: 26px
+    font-weight: 200 
+    span 
+        font-weight: 800
+        color: #00e78e
+.calculator-sections 
+    background: url('../img/calculator.png')
+    background-size: cover
+    background-position: bottom 50px center
+
+.why-use
+    padding-top: 286px
+    .row 
+        margin-top: 60px
+    p 
+        width: 280px 
+        max-width: 100%
+.calculator-header
+    background: #ececf1
+    padding-top: 24px
+    border-top-left-radius: 40px 
+    border-top-right-radius: 40px
+    padding-bottom: 24px
+    p 
+        font-weight: 300
+        margin-bottom: 15px
+.calculator-wrapper__title
+    font-size: 26px 
+    font-weight: 700
+    color: #424659
+    line-height: 1.2
+.calculator__tab-item   
+    padding-top: 22px
+.calculator-row
+    padding-left: 12px 
+    padding-right: 12px
+.profit-value
+    background: #ececf1
+    border-bottom-left-radius: 40px 
+    border-bottom-right-radius: 40px
+    padding-top: 31px 
+    padding-bottom: 31px
+
+//start swap rate 
+.swap-rate-table
+    width: 760px 
+    max-width: 760px
+    //max-width: 100%
+    margin-top: 46px
+   
+    thead tr:nth-child(1) th:nth-child(3),
+    thead tr:nth-child(1) th:nth-child(4)
+        padding-top: 0 
+        padding-left: 0
+        text-align: right
+        padding-right: 0
+        padding-bottom: 0px
+        height: auto
+    thead tr:nth-child(1) th:nth-child(3)
+        padding-right: 40px
+    thead tr th
+        padding-top: 17px 
+        padding-bottom: 17px
+    th:last-child,
+    td:last-child
+        padding-right: 0
+    .forex-table td:nth-child(3)
+        padding-right: 40px
+    .forex-table td:nth-child(4)
+        padding-right: 49px
+    thead tr:nth-child(1) th:nth-child(4)
+        padding-right: 49px
+    tr td:first-child
+        font-weight: 500
+        color: #424659
+    tr td:nth-child(2)
+        font-weight: 300
+        color: #424659
+    tbody tr td:nth-child(3),
+    tbody tr td:nth-child(4)
+        color: #03158f
+        font-weight: 500
+.green-bright
+    color: #00e78e
+.swap-rates-img-text
+    padding-bottom: 300px
+    padding-top: 90px
+    .h2
+        width: 400px
+        margin-bottom: 28px
+.swap-wrapper-sections
+    background: url('../img/sw.png')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: top -20vw center
+.how-calc
+    background: #f6f6f8
+    padding: 109px 0
+    .h2 
+        margin-bottom: 35px
+    p 
+        width: 650px 
+        max-width: 100%
+        margin-left: auto 
+        margin-right: auto
+        margin-bottom: 0
+        margin-top: 25px
+.swape-page 
+    .button-wrapper 
+        justify-content: center
+        margin-top: 25px
+        margin-bottom: 25px
+.what-swape-rate
+    padding-top: 70px
+    padding-bottom: 116px
+    .col-md-6 
+        display: flex 
+        align-items: center
+    .image-text__content 
+        padding-left: 0
+        .image-text__image-wrapper
+            display: flex 
+            align-items: center
+        p 
+            width: 440px 
+            max-width: 100%
+
+//end swap rate 
+.light 
+    font-weight: 300
+.link,
+.link:hover
+    color: #00ad6a
+    font-weight: 600
+    text-decoration: underline
+.calculator__tabs .calculator__tab:hover,
+.calculator__tabs .calculator__tab.active:hover  
+    background: $blue
+    color: #fff
+.wrapper--xs 
+    width: 635px 
+    max-width: 100%
+.ready-to-go__footer--center
+    flex-direction: column
+    .ready-to-go__footer-text
+        margin-right: 0
+        margin-bottom: 25px
+.two-col-secions
+    padding-top: 239px
+.line-row-mp
+    margin-top: -93px
+.why-use--mp
+    padding-top: 83px
+    padding-bottom: 130px
+    .h4 
+        margin-bottom: 25px
+.mampamm .forex-trading-sections
+    background-position: top 80px center
+.broker 
+    background: #f6f6f8
+    padding-top: 120px 
+    padding-bottom: 120px
+    .row 
+        margin-top: 45px
+    .ready-to-go__item
+
+        height: 522px
+    .tools-slider__list
+        width: 480px 
+        max-width: 100%
+.tools-slider__list-item span.regular
+    font-weight: 400
+
+//start islamc style
+.ready-to-go--islamic
+    padding-top: 0
+    .ready-to-go__item
+        height: auto
+        .button 
+            margin-top: 20px 
+            width: 134px
+            padding-left: 0 
+            padding-right: 0
+            max-width: 100% 
+            margin-left: auto 
+            margin-right: auto
+    .row 
+        margin-top: 45px
+.wrapper--s
+    width: 785px 
+    max-width: 100%
+.islamic 
+    .how-calc
+        .wrapper 
+           p 
+            width: 100%
+    .two-col-secions 
+        padding-top: 220px
+.green-item
+    text-align: center
+    width: 20% 
+    height: 176px
+    background: #18e999
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.green-item__icon
+    height: 95px 
+    img 
+        max-height: 98%
+.green-item__title
+    color: #fff
+    font-size: 18px 
+    font-weight: 800
+.green-items
+    display: flex 
+    justify-content: center 
+    flex-wrap: wrap
+    margin-bottom: 60px
+.green-item:nth-child(even)
+    background: #00e78e
+.islamic-table
+    padding-top: 126px 
+    padding-bottom: 126px
+.text-right
+    text-align: right
+.islamic 
+    .forex-table tr td:first-child
+        padding-left: 25px
+        max-width: 590px
+    tr 
+        
+        th:last-child 
+            text-align: right
+            padding-right: 25px
+            line-height: 1.1
+    .swap-rate-table tr td:nth-child(2)
+        padding-right: 25px 
+        text-align: right
+        color: #03158f
+        font-weight: 500
+    .forex-table tbody tr:nth-child(even)
+        background: #f6f6f8
+    .forex-table tbody tr:nth-child(odd)
+        background: #fff
+//end islamic style
 
 @import "media"
 

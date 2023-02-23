@@ -70,6 +70,9 @@ $('.tab').click(function(){
 $('.tab2').click(function(){
     $('.tabs').toggleClass('active');
 })
+$('.calculator__tab').click(function(){
+    $('.calculator__tabs').toggleClass('active');
+})
 $('.footer-menu__title').click(function(){
     $(this).parent().find('.footer-menu__item-content').slideToggle();
     $(this).parent().toggleClass('active');
@@ -84,3 +87,8 @@ $('.faq__item').click(function(){
 })
 //faq
 
+$('.see-more').click(function(){
+    $(this).parent().find('.found-account-wrapper').slideToggle();
+    $(this).parent().find('.found-now').toggleClass('active');
+    $(this).toggleClass('active');
+})

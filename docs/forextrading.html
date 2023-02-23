@@ -594,7 +594,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
-				<div class="image-text__image-wrapper animate__animated animate__fadeInUp wow">
+				<div class="image-text__image-wrapper">
 					<img src="img/ph.png" alt="" class="img-fluid ph-img">
 
 					<div class="statistic">
@@ -630,7 +630,7 @@
 				
 			</div>
 			<div class="col-md-6">
-				<div class="image-text__content animate__animated animate__fadeInUp wow dur">
+				<div class="image-text__content">
 					<h2 class="h2">
 						<span>Want more from <br> your forex trading?</span>
 						Echo Markets <br>hears you. 
@@ -750,83 +750,41 @@
 			<div class="col-md-6">
 
 				<div class="bid-ask-item__wrapper">
-					<div class="bid-ask-item bid-ask-item--pip">
+					<div class="bid-ask-item">
 
-					<div class="currency-item">
-						<div class="currency-item__header">
-							<div class="currency-item__header-text">
-								Base <br>currency
+						<div class="bid-ask-item__col">
+							<div class="bid-ask-item__title">
+								Bid
 							</div>
-							<div class="currency-item__header-title">
-								EURUSD
+							<div class="bid-ask-item__value red">
+								1.07 <span>47</span> 6
 							</div>
-							<div class="currency-item__header-text">
-								Counter <br> currency
-							</div>
-							
-						</div>
-
-						<div class="currency-item__row">
-
-							<div class="currency-item__col">
-								<div class="currency-item__title">
-									Bid
-								</div>
-								<div class="currency-item__value red">
-									1.07 <span>47</span> 6
-								</div>
-
-							</div>
-
-							<div class="currency-item__col">
-								<div class="currency-item__title">
-									Ask
-								</div>
-								<div class="currency-item__value red">
-									1.07 <span>47</span> 7
-								</div>
-							</div>
-
-						</div>
-
-						<div class="currency-item__row">
-
-							<div class="currency-item__col">
-								<div class="currency-item__title">
-									Spread
-								</div>
-								<div class="currency-item__value blue">
-									0.0
-								</div>
-
-							</div>
-
-							<div class="currency-item__col">
-								<div class="currency-item__title">
-									Trend
-								</div>
-								<div class="currency-item__value green">
-									0.12%
-								</div>
-							</div>
-
-						</div>
-
-						<div class="ft-item-buttons">
-							<a href="" class="ft-item-button green">
-								Buy
-							</a>
-
-							<a href="" class="ft-item-button red">
+							<a href="" class="bid-ask-item__button blue-bg">
 								Sell
 							</a>
-
+							<div class="bid-ask-item__text">
+								Bid price: The price you can sell at.
+							</div>
+	
+	
 						</div>
-
-						
+	
+						<div class="bid-ask-item__col">
+							<div class="bid-ask-item__title">
+								Ask
+							</div>
+							<div class="bid-ask-item__value green-text">
+								1.07 <span>47</span> 7
+							</div>
+							<a href="" class="bid-ask-item__button green-button">
+								Buy
+							</a>
+							<div class="bid-ask-item__text">
+								Ask price: The price you can buy at.
+							</div>
+						</div>
+	
 					</div>
-
-				</div>
 
 				
 				</div>
@@ -1277,19 +1235,19 @@ $2988
 		
 
 		<div class="tabs">
-			<div class="tab active">
+			<div class="tab2 active">
 				Forex
 			</div>
-			<div class="tab">
+			<div class="tab2">
 				Metals
 			</div>
-			<div class="tab">
+			<div class="tab2">
 				Commodities
 			</div>
-			<div class="tab">
+			<div class="tab2">
 				Indices
 			</div>
-			<div class="tab">
+			<div class="tab2">
 				Cryptocurrencies
 			</div>
 		</div>
@@ -1310,7 +1268,7 @@ $2988
 
 	<div class="tab-content">
 
-		<div class="tab__item">
+		<div class="tab__item tab__item2">
 			<table class="forex-table table table-striped">
 				<thead>
 					<tr>
@@ -1468,7 +1426,7 @@ $2988
 			 
 		</div>
 
-		<div class="tab__item">
+		<div class="tab__item2">
 			<table class="forex-table table table-striped">
 				<thead>
 					<tr>
@@ -1623,7 +1581,7 @@ $2988
 				</tbody>
 			  </table>
 		</div>
-		<div class="tab__item">
+		<div class="tab__item2">
 			<table class="forex-table table table-striped">
 				<thead>
 					<tr>
@@ -1778,7 +1736,7 @@ $2988
 				</tbody>
 			  </table>
 		</div>
-		<div class="tab__item">
+		<div class="tab__item2">
 			<table class="forex-table table table-striped">
 				<thead>
 					<tr>
@@ -1933,7 +1891,7 @@ $2988
 				</tbody>
 			  </table>
 		</div>
-		<div class="tab__item">
+		<div class="tab__item2">
 			<table class="forex-table table table-striped">
 				<thead>
 					<tr>
@@ -2604,7 +2562,14 @@ $2988
 	$(".tab").click(function() {		
     $(".tab").removeClass("active").eq($(this).index()).addClass("active");
      $(".tab__item").hide().eq($(this).index()).fadeIn();
-	 $('.tab-slider').slick('setPosition');
+	
+	
+});
+
+$(".tab2").click(function() {		
+    $(".tab2").removeClass("active").eq($(this).index()).addClass("active");
+     $(".tab__item2").hide().eq($(this).index()).fadeIn();
+
 	
 });
 
